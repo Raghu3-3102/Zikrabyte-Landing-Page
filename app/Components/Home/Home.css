@@ -1,0 +1,47 @@
+
+.home_section{
+    height: 150vh;
+}
+.headline{
+    text-align: center;
+    animation: headlineFadeUp 1s ease-in-out;
+    transform: translateY(35%);
+
+}
+
+.line{
+    position: absolute;
+    transform: translate(5px, 144px);
+
+}
+
+.emoji{
+    position: absolute;
+}
+
+.emoji1{
+    transform: translate(-506px, 183px);
+                         
+}
+.emoji2{
+    transform: translate(486px, 310px);                            
+}
+
+.swiper-wrapper{
+    transform: translateY(35%);
+}
+
+@keyframes headlineFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    80% {
+        opacity: 0.5;
+        transform: translateY(40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(35%);
+    }
+}    
