@@ -1,0 +1,87 @@
+
+  .con {
+    background-image: url(/assets/images/fbg12.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    height: 564px;
+    
+  }
+  
+  .ch2{
+    color: white;
+    font-size: 54px;
+    font-weight: 800;
+    margin-top: 50px;
+    padding: 100px;
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+
+  .cp2{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 100px;
+    padding-top: 0;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 100px;
+    padding-top: 50px;
+  }
+  
+  .formGroup {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .input,
+  .select,
+  .textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+  }
+  
+  
+  .select {
+    appearance: none;
+    background: transparent;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: #ff7542;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+  .submitButton:hover {
+    background-color: #e6642e;
+  }
+  
+  .loc {
+    background-image: url(/assets/images/fbg2.png);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

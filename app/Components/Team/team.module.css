@@ -1,0 +1,215 @@
+
+.teamHeading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 1.5;
+  }
+  
+  .container {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 30px;
+    margin: 50px 40px;
+  }
+  
+  .imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imageContainer img {
+    width: 320px;
+    height: 440px;
+  }
+  
+  .th {
+    font-size: 50px;
+    font-weight: 900;
+    padding-top: 20px;
+  }
+  
+  .imageContainer h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF7542;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .letsContainer {
+    margin: 50px;
+    display: flex;
+    margin-bottom: 150px;
+  }
+  
+  .ani {
+    /* display: flex;
+    align-items: center; */
+  }
+  
+  .ch2 {
+    font-size: 100px;
+    font-weight: 800;
+    color: rgb(255, 117, 66);
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-top: 160px;
+  }
+
+  
+  .pen {
+    position: relative;
+    height: 80px;
+    width: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .top {
+    height: 8px;
+    width: 10px;
+    background-color: transparent;
+    border: 4px solid rgb(255, 117, 66);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 65px;
+    animation: tiltRight 2s infinite;
+  }
+  
+  .mid {
+    height: 50px;
+    width: 10px;
+    background-color: transparent;
+    border: 4px solid black;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 9px;
+    display: flex;
+    justify-content: center;
+    animation: rotateFull 2s infinite;
+  }
+  
+  .limi {
+    margin-top: 5px;
+    height: 27px;
+    width: 3px;
+    border-radius: 10px;
+    background-color: rgb(255, 117, 66);
+    position: absolute;
+    animation: move 2s infinite;
+  }
+  
+  .last {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid black;
+    bottom: 0;
+    left: -1;
+    animation: tiltRight 2s infinite;
+  }
+  
+  @keyframes tiltRight {
+  
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(20deg);
+    }
+  }
+  
+  @keyframes rotateFull {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(42%);
+    }
+  }
+  
+  .lp {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 100px;
+    margin: 10px;
+    margin-left: 0;
+  }
+  
+  .lp1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 55px;
+  }
+  
+  .lp2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 150px;
+    margin: 10px;
+    margin-left: 0;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .lh {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .lh1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .gr {
+    width: 700px;
+  }
+  

@@ -1,0 +1,117 @@
+.footer {
+    background-color: #FF7542;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .zik{
+    color: white;
+    font-size: 54px;
+    font-weight: 800;
+    margin-left: 60px;
+    margin-bottom: 5px;
+  }
+
+  .hr{
+    background-color: black;
+    height: 5px;
+    border: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .container {
+    padding: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .h46{
+    margin-top: 23px;
+    padding-left: 50px;
+  }
+
+  .what{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .hr-1{
+    background-color: black;
+    height: 5px;
+    border: 0;
+    max-width: 100px;
+  }
+
+  .column {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+    display: flex;
+    justify-content: start;
+  }
+  
+
+  .column h4 {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 20;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .p5{
+    padding-top: 19px;
+  }
+
+  .column ul li,
+  .column p {
+    margin:0;
+    color: black;
+    font-size: 26px;
+    font-weight: 800;
+    padding-left: 30px;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    padding-left: 60px;
+  }
+  
+  .contact p {
+    margin: 0;
+    color: black;
+    font-size: 26px;
+  }
+  
+  .do{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .h4{
+    margin-top: 23px;
+  }
+
+  .h45{
+    margin-top: 23px;
+    padding-left: 50px;
+  }
+
+ 
+
+  .lin{
+    display: flex;
+    gap: 120px;
+    padding-bottom: 20px;
+  }
+
+  .line{
+    background-color: black;
+    height: 3px;
+    width: 400px;
+
+  }

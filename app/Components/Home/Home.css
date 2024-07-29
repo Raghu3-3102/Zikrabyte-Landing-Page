@@ -1,4 +1,10 @@
-
+:root{
+    --emoji1-y: 152px;
+    --emoji2-y: 280px;
+    --emoji1-x: -506px;
+    --emoji2-x: 486px;
+    --line-y: 112px
+}
 .home_section{
     height: 150vh;
 }
@@ -11,7 +17,7 @@
 
 .line{
     position: absolute;
-    transform: translate(5px, 144px);
+    transform: translate(5px, var(--line-y));
 
 }
 
@@ -20,11 +26,11 @@
 }
 
 .emoji1{
-    transform: translate(-506px, 183px);
+    transform: translate(var(--emoji1-x), var(--emoji1-y));                            
                          
 }
 .emoji2{
-    transform: translate(486px, 310px);                            
+    transform: translate(var(--emoji2-x), var(--emoji2-y));                            
 }
 
 .swiper-wrapper{
@@ -38,7 +44,7 @@
     }
     80% {
         opacity: 0.5;
-        transform: translateY(40%);
+        transform: translateY(20%);
     }
     100% {
         opacity: 1;

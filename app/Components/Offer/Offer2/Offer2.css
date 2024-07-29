@@ -1,4 +1,69 @@
 .offer2_section{
     height: 100vh;
     width: 100vw;
+    /* background-color: antiquewhite; */
+
+}
+
+.offer2_section .service_cnt{
+}
+
+.offer2_section .service-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--saffron-color);
+    /* color: #fff; */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    align-items: center;
+    transform: translateX(12%);
+}
+
+
+.offer2_section .service-card{
+    border-top: none;
+    border-left: none;
+}
+
+.service_cnt{
+    border-left: 1px solid black;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .service_title{
+    position: relative;
+    width: fit-content;
+    margin-top: 2rem;
+  }
+
+.service_title::before{
+    content: '02';
+    display: block;
+    width: 50px;
+    position: absolute;
+    font-size: 1.2rem;
+    height: 100%;
+    color: var(--saffron-color);
+    right: 0;
+    transform: translate(50px, -50%);
+    text-align: right;
+}  
+
+
+
+.service_description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  
 }
