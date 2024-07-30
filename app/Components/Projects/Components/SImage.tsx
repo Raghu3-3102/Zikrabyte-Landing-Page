@@ -15,24 +15,23 @@ function Simage(){
 
     const handleMouseLeave = () => {
         setIsHovered(false);
-        setMovingTextCount(0); // Reset the moving text count
+        setMovingTextCount(0);
     };
 
     const handleMouseMove = () => {
         if (isHovered && movingTextCount < 3) {
-            setMovingTextCount(prevCount => prevCount + 1); // Increment text count on mouse move, up to 3
+            setMovingTextCount(prevCount => prevCount + 1);
         }
     };
 
     return (
         <div className="bgimg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove}>
             <div style={{ position: 'relative' }}>
-                <Image src={comp} alt="Hands Image" width={420} height={370} />
+                <Image src={comp} alt="Hands Image" width={450} height={450} />
                 {isHovered && (
-                    <div className="moving-text-container">
-                       
+                    <div className="moving-text-container2">
                         {Array.from({ length: movingTextCount }).map((_, index) => (
-                            <div key={index} className={`moving-text`}>PROJECT ONE PROJECT ONE PROJECT ONE</div>
+                            <div key={index} className="moving-text2">PROJECT ONE PROJECT ONE </div>
                         ))}
                     </div>
                 )}
@@ -41,7 +40,7 @@ function Simage(){
                 <Para />
             </div>
         </div>
-    );;
+    );
 }
 
 export default Simage;
