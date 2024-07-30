@@ -29,8 +29,8 @@ export const Offer1 = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-offset="850"
-              data-aos-delay="500"
+              data-aos-offset="250"
+              data-aos-delay="100"
 
               // data-aos-anchor-placement="r"
 
@@ -47,8 +47,8 @@ export const Offer1 = () => {
               data-aos="zoom-out-up"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-offset="600"
-              data-aos-delay="200"
+              data-aos-offset="200"
+              data-aos-delay="100"
               // data-aos-anchor-placement="top-center"
         >
             <Image src={offer1} alt="Offer1"/>

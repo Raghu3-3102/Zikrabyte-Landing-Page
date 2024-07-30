@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import serviceParticles from '../../../../public/assets/img/services/serviceParticles.png';
+import AOS from "aos";
+
 
 interface Card {
   title: string;
@@ -26,7 +28,7 @@ export const Card = ({card, gradient} : Props) => {
             priority={false}
             placeholder = 'empty'
           />
-          <div className="card_img_cnt">
+          <div className="card_img_cnt" >
             <Image
               className="card_img"
               src={card.img || "/assets/img/services/GraphicsDesign.png" }
