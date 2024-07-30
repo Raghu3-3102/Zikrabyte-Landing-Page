@@ -26,6 +26,20 @@
 .offer2_section .service-card{
     border-top: none;
     border-left: none;
+    transition: all 1s ease;
+    animation: fadeup 1s ease;
+}
+
+@keyframes fadeup {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
 }
 
 .service_cnt{

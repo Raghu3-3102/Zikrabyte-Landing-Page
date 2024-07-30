@@ -15,7 +15,7 @@
 
 }
 
-.line{
+.home_section   .line{
     position: absolute;
     transform: translate(5px, var(--line-y));
 

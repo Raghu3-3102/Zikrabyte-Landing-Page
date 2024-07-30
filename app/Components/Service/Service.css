@@ -132,6 +132,7 @@
     align-items: center;
     flex-wrap: wrap;
     height: 165vh;
+    margin-bottom: 38.2%;
 }
 
 .cards_cnt .card_cnt_col{
@@ -158,3 +159,4 @@ height: 100%;
 .cards_cnt .col1, .col3{
     padding-top: 100px;
 }
+

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Navbar } from "./Components/Navbar/Navbar";
 import {Home} from "./Components/Home/Home";
 import { Offer } from "./Components/Offer/Offer";
+import { Section } from "./Components/Projects/Section";
 import { Service } from "./Components/Service/Service";
 import { Team } from "./Components/Team/Team";
 import { Contact } from "./Components/Contact/Contact";
@@ -13,6 +14,7 @@ export default function LandingPage() {
       <Home />
       <Offer />
       <Service />
+      <Section />
       <Team />
       <Contact />
       <Footer />

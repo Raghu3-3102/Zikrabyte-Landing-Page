@@ -6,10 +6,12 @@
     justify-content: space-between;
     align-items:start;
     height: 564px;
+    width: 100vw;
     
   }
   
   .ch2{
+    /* width: 100%; */
     color: white;
     font-size: 54px;
     font-weight: 800;

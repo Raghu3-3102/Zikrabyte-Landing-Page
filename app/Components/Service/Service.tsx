@@ -116,7 +116,7 @@ export const Service = () => {
           <Card card={cards[5]}  gradient={getRandomGradient()}/> 
           <Card card={cards[7]}  gradient={getRandomGradient()}/> 
         </div>
-        <div className="">
+        <div className="last_card">
 
        <Card card={cards[8]}   gradient={getRandomGradient()}/>
         </div>

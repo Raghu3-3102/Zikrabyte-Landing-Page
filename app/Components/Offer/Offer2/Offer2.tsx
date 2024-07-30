@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react'
-import AOS from "ao";
+import AOS from "aos";
 import './Offer2.css'
 
 
@@ -63,11 +63,7 @@ export const Offer2 = () => {
     </div>
 
     {Array.from({ length: 10 }).map((_, index) => (
-        <div key={index} className="service-card p-7 border border-solid border-black"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="-200" 
-            > 
+        <div key={index} className="service-card p-7 border border-solid border-black"> 
         <h3 className="service_title text-3xl font-semibold ">
         {data.title}
         </h3>
