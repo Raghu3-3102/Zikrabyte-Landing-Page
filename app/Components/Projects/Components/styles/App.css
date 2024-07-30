@@ -20,7 +20,7 @@
     flex-direction: column;
     background-color: #FF7542;
     width: 100vw;
-    height: 28vh;
+    height: 25vh;
     margin-bottom: 100px;
     margin-left: 10px;
   
@@ -64,9 +64,9 @@
     flex-direction: column;
     background-color: #FF7542;
     width: 100vw;
-    height: 28vh;
+    height: 25vh;
     margin-bottom: 100px;
-    margin-top: 125px;
+    margin-top: 135px;
     margin-left: 10px;
     position: relative;
 }
