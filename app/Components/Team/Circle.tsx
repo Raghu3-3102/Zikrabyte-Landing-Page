@@ -6,6 +6,9 @@ const Circle = () => {
   useEffect(() => {
     const containers = document.querySelectorAll(`.${styles.imageContainer}`);
 
+
+
+    
     containers.forEach(container => {
       const circle : any = container.querySelector(`.${styles.circle}`);
 
