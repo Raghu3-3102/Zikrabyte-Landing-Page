@@ -27,7 +27,7 @@ function Simage(){
     return (
         <div className="bgimg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove}>
             <div style={{ position: 'relative' }}>
-                <Image src={comp} alt="Hands Image" width={420} height={410} />
+                <Image src={comp} alt="Hands Image" width={450} height={450} />
                 {isHovered && (
                     <div className="moving-text-container2">
                         {Array.from({ length: movingTextCount }).map((_, index) => (
