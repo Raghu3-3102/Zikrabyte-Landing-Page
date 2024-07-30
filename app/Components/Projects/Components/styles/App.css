@@ -138,61 +138,86 @@
 .bgimg .para {
     margin-left: 30px;
 }
-.projects_section 
+.projects_section
 .bgimg {
-    position: relative; 
+    position: relative;
 }
 
-.projects_section 
+.projects_section
 .moving-text-container {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 1;
-    pointer-events: none; 
-}
-.projects_section 
-
-.moving-text {
+    pointer-events: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
-    white-space: nowrap; 
-    animation: moveText 0.9s linear forwards; 
-    opacity: 1; 
-    position: relative;
-    margin: 10px 0; 
 }
 
+.projects_section
+.moving-text {
+    white-space: nowrap;
+    animation: moveText 0.8s ease-in-out forwards;
+    opacity: 1;
+    position: relative;
+    margin: 10px 0;
+}
 
 @keyframes moveText {
     0% {
-        transform: translate(-50%, -50%) translateX(10%); 
+        transform: translate(5%, -50%) translateX(-30%);
         opacity: 1;
     }
-
-    70% {
-        transform: translate(-50%, -50%) translateX(90%); 
-        opacity: 0.5; 
+    60%{
+        opacity: 0.7;
     }
-
-    100%{
-        transform: translate(-50%, -50%) translateX(90%); 
+    100% {
+        transform: translate(-50%, -50%) translateX(75%);
         opacity: 0;
     }
-
 }
 
-
-.projects_section 
+.projects_section
 .moving-text:nth-child(2) {
-    animation-delay: 0s; 
+    animation-delay: 0s;
 }
 
-
-.projects_section 
+.projects_section
 .moving-text:nth-child(3) {
-    animation-delay: 0s; 
+    animation-delay: 0s;
 }
-
+.projects_section
+.moving-text-container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    pointer-events: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+.projects_section
+.moving-text2{
+    white-space: nowrap;
+    animation: movesmallText 0.8s ease-in-out forwards;
+    opacity: 1;
+    position: relative;
+    margin: 10px 0;
+}
+@keyframes movesmallText {
+    0% {
+        transform: translate(-35%, -50%) translateX(-10%);
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(85%);
+        opacity: 0;
+    }
+}

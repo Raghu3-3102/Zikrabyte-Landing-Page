@@ -12,16 +12,17 @@ function BImage2(){
 
     const handleMouseEnter = () => {
         setIsHovered(true);
+        setMovingTextCount(1);
     };
 
     const handleMouseLeave = () => {
         setIsHovered(false);
-        setMovingTextCount(0); // Reset the moving text count
+        setMovingTextCount(0);
     };
 
     const handleMouseMove = () => {
-        if (isHovered && movingTextCount < 3) {
-            setMovingTextCount(prevCount => prevCount + 1); // Increment text count on mouse move, up to 3
+        if (isHovered && movingTextCount < 2) {
+            setMovingTextCount(3);
         }
     };
 
@@ -32,7 +33,7 @@ function BImage2(){
                 {isHovered && (
                     <div className="moving-text-container">
                         {Array.from({ length: movingTextCount }).map((_, index) => (
-                            <div key={index} className={`moving-text`}>PROJECT ONE PROJECT ONE PROJECT ONE</div>
+                            <div key={index} className="moving-text">PROJECT ONE PROJECT ONE PROJECT ONE</div>
                         ))}
                     </div>
                 )}
@@ -41,7 +42,7 @@ function BImage2(){
                 <Para />
             </div>
         </div>
-    );;
+    );
 }
 
 export default BImage2;
