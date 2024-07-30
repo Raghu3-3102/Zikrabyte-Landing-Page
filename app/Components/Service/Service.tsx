@@ -4,7 +4,7 @@ import "./Service.css";
 import AOS from "aos";
 import { Card } from "./Card/Card";
 import Image from "next/image";
-import serviceBg from "../../../public/assets/img/serviceBg.png";
+import serviceBg from "../../../public/assets/img/services/serviceBg.png";
 
 export const Service = () => {
   useEffect(() => {
