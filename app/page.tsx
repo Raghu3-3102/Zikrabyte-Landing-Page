@@ -8,6 +8,7 @@ import { Team } from "./Components/Team/Team";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
 
+
 export default function LandingPage() {
   return (
     <main className="flex flex-col items-center justify-between ">

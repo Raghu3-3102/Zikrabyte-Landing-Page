@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import serviceParticles from '../../../../public/assets/img/services/serviceParticles.png';
 
 interface Card {
   title: string;
@@ -13,20 +15,25 @@ interface Props {
 
 export const Card = ({card, gradient} : Props) => {
 
-
   return (
-        <div className="card p-4 m-2 flex justify-center gap-4 flex-col">
-          <img
+        <div className="card p-4 m-2 flex justify-center flex-col">
+          <Image
             className="particle_img"
-            src="assets\img\services\service__particles.png"
-            alt=""
+            src={serviceParticles}
+            width={450}
+            height={450}
+            alt="Particle Image"
+            priority={false}
+            placeholder = 'empty'
           />
           <div className="card_img_cnt">
-            <img
+            <Image
               className="card_img"
-              src={card.img || "assets\img\services\GraphicsDesign.png" }
+              src={card.img || "/assets/img/services/GraphicsDesign.png" }
               alt="Graphics Design"
-            />
+              width={150}
+              height={150}
+  />
             <div className="gradient-box text-white" style={{ background: gradient }}></div>
           </div>
           <div className="card_text_cnt mt-8">

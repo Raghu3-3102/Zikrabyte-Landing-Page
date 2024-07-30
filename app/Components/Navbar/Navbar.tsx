@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import './Navbar.css'
+import Image from 'next/image';
+import zikrabyteLogo from '../../../public/assets/img/zikrabyteLogo.png' ;
 
 export const Navbar = () => {
 
@@ -16,7 +18,7 @@ export const Navbar = () => {
         <div className="nav_container flex">
 
         <div className="logo_container">
-            <img className='logo_container__img' src="assets/img/zikrabyte-logo.png" alt="logo" />
+            <Image className='logo_container__img' src={zikrabyteLogo} alt="logo"  />
         </div>
 
         <div className={`nav-button relative group ${isMenuOpen ? 'open' : ''}`}>

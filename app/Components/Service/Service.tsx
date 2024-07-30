@@ -3,8 +3,8 @@ import React, { useEffect } from "react";
 import "./Service.css";
 import AOS from "aos";
 import { Card } from "./Card/Card";
-import { title } from "process";
-import { describe } from "node:test";
+import Image from "next/image";
+import serviceBg from "../../../public/assets/img/serviceBg.png";
 
 export const Service = () => {
   useEffect(() => {
@@ -15,54 +15,54 @@ export const Service = () => {
   const card1= {
     title: "Graphics Design",
     description: "Improve your digital platforms with results driven uxui.",
-    img: "assets\\img\\services\\GraphicsDesign.png"
+    img: "/assets/img/services/GraphicsDesign.png"
   }
 
   const cards = [
     {
       title: 'UI/UX Design',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\UiUxDesign.png"
+      img: "/assets/img/services/UiUxDesign.png"
     },
     {
       title: "Graphics Design",
       description: "Improve your digital platforms with results driven uxui.",
-      img: "assets\\img\\services\\GraphicsDesign.png"
+      img: "/assets/img/services/GraphicsDesign.png"
     },  
     {
       title: 'Content Management System',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\CMS.png"
+      img: "/assets/img/services/CMS.png"
     },
     {
       title: 'Web Development',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\WebDevelopment.png"
+      img: "/assets/img/services/WebDevelopment.png"
     },
     {
       title: 'Social Media Marketing',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\SMM.png"
+      img: "/assets/img/services/SMM.png"
     },
     {
       title: 'E-Commerce Web Development',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\eComDevelopment.png"
+      img: "/assets/img/services/eComDevelopment.png"
     },
     {
       title: 'Digital Branding & Identity',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\DigiralBrandIdentity.png"
+      img: "/assets/img/services/DigiralBrandIdentity.png"
     },
     {
       title: 'Search Engine Optimisation',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\SEO.png"
+      img: "/assets/img/services/SEO.png"
     },
     {
       title: 'Web Development',
       description: 'Improve your digital platforms with results driven uxui.',
-      img: "assets\\img\\services\\WebDevelopment2.png"
+      img: "/assets/img/services/WebDevelopment2.png"
     },
   ]
 
@@ -84,7 +84,7 @@ export const Service = () => {
 
   return (
     <div className="service_section" data-aos="fade-up">
-      <img className="bg_img" src="assets\img\Service_bg.png" alt="" />
+      <Image className="bg_img" src={serviceBg} alt=""/>
 
       <div className="heading_cnt text-center mt-32">
         <div className="heading_text_cnt">

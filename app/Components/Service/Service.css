@@ -142,6 +142,8 @@
 align-items: space-around;
 justify-content: space-around;
 height: 100%;
+width: 33%;
+align-items: center;
 }
 
 .cards_cnt .col2{
@@ -159,4 +161,3 @@ height: 100%;
 .cards_cnt .col1, .col3{
     padding-top: 100px;
 }
-

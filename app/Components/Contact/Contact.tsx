@@ -43,7 +43,7 @@ export const Contact = () => {
       </div>
     </div>
     <div className={styles.loc}>
-        <Image src="/assets/images/f1.png" width={80} height={80}/>
+        <Image src="/assets/images/f1.png" width={80} height={80} alt='f1 image'/>
     </div>
     </div>
   );

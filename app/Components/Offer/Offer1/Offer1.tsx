@@ -2,7 +2,9 @@
 import React, { useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import './Offer1.css'
+import Image from 'next/image';
+import './Offer1.css';
+import offer1 from '../../../../public/assets/img/offer1.png';
 
 
 export const Offer1 = () => {
@@ -49,7 +51,7 @@ export const Offer1 = () => {
               data-aos-delay="200"
               // data-aos-anchor-placement="top-center"
         >
-            <img src="assets\img\offer1.png" alt="" />
+            <Image src={offer1} alt="Offer1"/>
         </div>
     </div>
   )
