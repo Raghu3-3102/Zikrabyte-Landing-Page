@@ -2,7 +2,7 @@
 
 .projects_section{
     width: 100vw;
-    height: 155vh;
+    min-height: 155vh;
     margin-top: 10vw;
     background-color: #fff;
 
