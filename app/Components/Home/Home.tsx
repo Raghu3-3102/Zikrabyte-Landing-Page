@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 import './Home.css';
-import emoji1 from '../../../public/assets/img/emoji1.png';
+// import emoji1 from '../../../public/assets/img/emoji1.png';
 import emoji2 from '../../../public/assets/img/emoji2.png';
+import emoji from '../../../public/assets/img/emoji.gif';
 import swiperWrapper from '../../../public/assets/img/swiperWrapper.png';
 
 export const Home = () => {
@@ -27,10 +28,10 @@ export const Home = () => {
 
 
 <div className="emoji emoji1">
-  <Image src={emoji1} alt="emoji1" />
+  <Image src={emoji} alt="emoji1" width={75} height={75} unoptimized/>
 </div>
 <div className="emoji emoji2">                          
-  <Image src={emoji2} alt="emoji2" />
+  <Image src={emoji} alt="emoji2" width={75} height={75} unoptimized />
 </div>
 
 <div className="swiper-wrapper">  
