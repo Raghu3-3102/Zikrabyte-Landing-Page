@@ -5,8 +5,13 @@ import Image from 'next/image';
 import comp from './images/computer.png'
 import{useState,useRef} from "react";
 
+interface Line {
+    direction: 'left' | 'right';
+    id: number;
+}
+
 function Simage(){
-    const [lines, setLines] = useState([]);
+    const [lines, setLines] = useState<Line[]>([]);
     const [lineCount, setLineCount] = useState(0);
     const mouseMovedRef = useRef(false);
 

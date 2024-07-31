@@ -3,11 +3,15 @@ import React from "react";
 import Para from "./Para";
 import Image from 'next/image';
 import hands from './images/hands.png'
-import{useState} from 'react';
+import{useState,useRef} from 'react';
 
+interface Line {
+    direction: 'left' | 'right';
+    id: number;
+}
 
-function BImage2(){
-    const [lines, setLines] = useState([]);
+function BImage1(){
+    const [lines, setLines] = useState<Line[]>([]);
     const [lineCount, setLineCount] = useState(0); 
     const mouseMovedRef = useRef(false); 
 
@@ -47,8 +51,8 @@ function BImage2(){
                 <Image 
                     src={hands} 
                     alt="Hands Image" 
-                    width={610}
-                    height={360} 
+                    width={610} 
+                    height={63} 
                     className="responsive-image" 
                 />
                 <div className="moving-text-container">
@@ -66,4 +70,4 @@ function BImage2(){
     );
 }
 
-export default BImage2;
+export default BImage1;

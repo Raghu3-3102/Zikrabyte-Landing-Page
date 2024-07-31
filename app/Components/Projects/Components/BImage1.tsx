@@ -3,10 +3,15 @@ import React from "react";
 import Para from "./Para";
 import Image from 'next/image';
 import comp from './images/computer.png';
-import {useState} from 'react';
+import {useState,useRef} from 'react';
+
+interface Line {
+    direction: 'left' | 'right';
+    id: number;
+}
 
 function BImage1(){
-    const [lines, setLines] = useState([]);
+    const [lines, setLines] = useState<Line[]>([]);
     const [lineCount, setLineCount] = useState(0); 
     const mouseMovedRef = useRef(false); 
 
@@ -43,7 +48,7 @@ function BImage1(){
             onMouseMove={handleMouseMove}
         >
             <div style={{ position: 'relative' }}>
-            <Image 
+                <Image 
                     src={comp} 
                     alt="Hands Image" 
                     width={610} 
