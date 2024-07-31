@@ -81,3 +81,30 @@
     margin-top: 1rem;
   
 }
+
+
+/* when viewport less than 820px */
+@media screen and (max-width: 820px) {
+    .offer2_section{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 20px;
+    }
+    .offer2_section .service-btn{
+        transform: none;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    .service_cnt{
+        width: 100%;
+        margin-top: 10px;
+    }
+  }
+
+
+  @media screen and (max-width:468px) {
+    .offer2_section .service-btn{
+    }
+  }

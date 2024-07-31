@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Service.css";
 import AOS from "aos";
 import { Card } from "./Card/Card";
@@ -7,9 +7,32 @@ import Image from "next/image";
 import serviceBg from "../../../public/assets/img/ServiceBg.png";
 
 export const Service = () => {
+
+
+  const [isTabletScreen, setTabletcreen] = useState(false);
+  
   useEffect(() => {
     AOS.init({});
     AOS.refresh();
+
+    // window width checking code starts
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setTabletcreen(window.innerWidth < 900  );
+      };
+
+      // Set the initial state
+      handleResize();
+
+      window.addEventListener('resize', handleResize);
+      
+      // Cleanup the event listener on component unmount
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }
+    // window width checking code ends
+
   }, []);
 
   const card1= {
@@ -82,6 +105,8 @@ export const Service = () => {
     return `radial-gradient(${colors[randomIndex1]}, transparent, transparent)`;
 };
 
+
+
   return (
     <div className="service_section" data-aos="fade-up">
       <Image className="bg_img" src={serviceBg} alt=""/>
@@ -100,27 +125,38 @@ export const Service = () => {
         </div>
       </div>
 
+      {isTabletScreen ? 
       <div className="cards_cnt">
-        <div className="card_cnt_col col1">
-          <Card card={cards[0]}  gradient={getRandomGradient()} /> 
-          <Card card={cards[3]}  gradient={getRandomGradient()}/> 
-          <Card card={cards[6]}  gradient={getRandomGradient()}/> 
-        </div>
-        <div className="card_cnt_col col2">
-          <Card card={cards[1]}  gradient={getRandomGradient()}/> 
-          {/* <Card />  */}
-          <Card card={cards[4]}  gradient={getRandomGradient()}/> 
-        </div>
-        <div className="card_cnt_col col3">
-          <Card card={cards[2]}  gradient={getRandomGradient()}/> 
-          <Card card={cards[5]}  gradient={getRandomGradient()}/> 
-          <Card card={cards[7]}  gradient={getRandomGradient()}/> 
-        </div>
-        <div className="last_card">
-
-       <Card card={cards[8]}   gradient={getRandomGradient()}/>
-        </div>
+        {cards.map((_,index)=> (
+          <Card card={_} gradient={getRandomGradient()} key={index} />
+        ))}
       </div>
+:
+      //Desktop cards code
+      <div className="cards_cnt">
+      <div className="card_cnt_col col1">
+        <Card card={cards[0]}  gradient={getRandomGradient()} /> 
+        <Card card={cards[3]}  gradient={getRandomGradient()}/> 
+        <Card card={cards[6]}  gradient={getRandomGradient()}/> 
+      </div>
+      <div className="card_cnt_col col2">
+        <Card card={cards[1]}  gradient={getRandomGradient()}/> 
+        {/* <Card />  */}
+        <Card card={cards[4]}  gradient={getRandomGradient()}/> 
+      </div>
+      <div className="card_cnt_col col3">
+        <Card card={cards[2]}  gradient={getRandomGradient()}/> 
+        <Card card={cards[5]}  gradient={getRandomGradient()}/> 
+        <Card card={cards[7]}  gradient={getRandomGradient()}/> 
+      </div>
+      <div className="last_card">
+
+     <Card card={cards[8]}   gradient={getRandomGradient()}/>
+      </div>
+    </div>
+      }
+
+
     </div>
   );
 };

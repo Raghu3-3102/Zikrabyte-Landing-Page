@@ -49,15 +49,15 @@ export const Offer2 = () => {
       
 
     {/* Heading Container Starts */} 
-    <div className="heading_cnt w-2/5 flex flex-col justify-center items-center text-right ">
-      <h3 className='text-7xl font-medium'>
+    <div className="heading_cnt lg:w-2/5 flex flex-col justify-center items-center text-center lg:text-right ">
+      <h3 className='text-7xl font-medium '>
         What We <br/> Offer
       </h3>
       <p className='text-xl mt-3'>
       More than just web designers.
       </p>
       
-      <div className="btn service-btn inline-flex p-2 rounded ">
+      <div className="btn service-btn md:inline-flex p-2 rounded flex-nowrap">
       <span className='uppercase'>View Services</span><svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21.3868 7.58398L4.93262 17.0839" stroke="#0F0F0F" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M10.9277 4.80786L21.3794 7.58428L18.5586 18.0251" stroke="#0F0F0F" strokeLinecap="round" strokeLinejoin="round"/>

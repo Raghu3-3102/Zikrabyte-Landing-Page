@@ -1,14 +1,16 @@
 .service_section{
     min-height: 100vh;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    background-color: #000;
+    z-index: -9;
 }
 
 .service_section .bg_img {
     position: absolute;
     z-index: -10;
+    width: 100%;
 }
-
 
 .heading_cnt .btn_cnt{
     width: 250px;
@@ -131,8 +133,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 165vh;
-    margin-bottom: 38.2%;
+    height: fit-content;
+    /* margin-bottom: 38.2%; */
 }
 
 .cards_cnt .card_cnt_col{
@@ -160,4 +162,52 @@ align-items: center;
 }
 .cards_cnt .col1, .col3{
     padding-top: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+
+
+    .service_section .heading_cnt{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .service_section .card{
+       max-width: 30vw;
+    }
+
+    .service_section .cards_cnt{
+    }
+
+    .service_section .gradient-box{
+        transform: scale(0.5);
+    }
+}
+
+    
+@media screen and (max-width: 768px) {
+.service_section .btn_cnt{
+    position: relative;
+    transform: none;
+    right: 0;
+}
+.service_section .cards_cnt{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+   
+    /* height: 150vh; */
+}
+
+.cards_cnt .card{
+    max-width: 45vw;
+}
+
+}
+
+@media screen and (max-width: 468px) {
+    .cards_cnt .card{
+        max-width: 80vw;
+    }
 }

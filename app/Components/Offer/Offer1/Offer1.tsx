@@ -31,13 +31,10 @@ export const Offer1 = () => {
               data-aos-easing="ease-in-out"
               data-aos-offset="250"
               data-aos-delay="100"
-
-              // data-aos-anchor-placement="r"
-
-              
               >
-            <h2 className='text-4xl font-semibold'>What We Offer</h2>
-            <p className='w-1/2 text-xl mt-5' >
+            <h2 className='text-4xl font-semibold '>What We Offer</h2>
+            <p className='xl:w-1/2 text-xl mt-5 ' >
+            {/* lg:w-3/4 */}
             We are a based web design team. Combining high-end design with strategic
             SEO to elevate brands and increase website traffic. We&apos;ll use the same methods
             that helped you find our site, to bring people to yours.

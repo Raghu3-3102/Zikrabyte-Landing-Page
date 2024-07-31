@@ -1,19 +1,45 @@
-import React from 'react'
+'use client';
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import './Home.css';
-// import emoji1 from '../../../public/assets/img/emoji1.png';
-import emoji2 from '../../../public/assets/img/emoji2.png';
 import emoji from '../../../public/assets/img/emoji.gif';
 import swiperWrapper from '../../../public/assets/img/swiperWrapper.png';
 
 export const Home = () => {
+
+  
+
+  const [isDesktopScreen, setDesktopScreen] = useState(false);
+  const [isMobileScreen, setMobilecreen] = useState(false);
+
+
+  useEffect(() => {
+    // Check if window is defined
+    if (typeof window !== 'undefined') {
+        const handleResize = () => {
+          setDesktopScreen(window.innerWidth < 1280);
+        };
+
+        // Set the initial state
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }
+}, []);
+
+
   return (
     <div className='home_section flex items-center flex-col  w-full mx-24'>
 
         <div className="headline flex justify-center items-center flex-col">
-            <h1 className="text-9xl font-bold  w-[1500px]">FOR AN INCREDIBLE
-            NEXT GEN SOLUTIONS</h1>
-            <p className="text-lg w-[1000px] mt-10">
+            <h1 className="text-9xl font-bold  w-[1500px]">FOR AN {isDesktopScreen ? <br /> : null} INCREDIBLE
+            NEXT {isDesktopScreen ? <br /> : null} GEN SOLUTIONS</h1>
+            <p className="headline_tagline text-2xl w-[1000px] mt-10 ">
             We are a based web design team. Combining high-end design with strategic SEO to elevate brands and increase website traffic. We’ll use the same methods that helped you find our site, to bring people to yours.    
             </p>
 
@@ -35,7 +61,7 @@ export const Home = () => {
 </div>
 
 <div className="swiper-wrapper">  
-  <Image src={swiperWrapper} alt="swiper-wrapepr"/>
+  <Image src={swiperWrapper} alt="swiper-wrapepr" />
 </div>
     </div>
 
