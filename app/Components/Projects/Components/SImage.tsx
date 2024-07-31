@@ -3,7 +3,7 @@ import React from "react";
 import Para from "./Para";
 import Image from 'next/image';
 import comp from './images/computer.png'
-import{useState} from "react";
+import{useState,useRef} from "react";
 
 function Simage(){
     const [lines, setLines] = useState([]);
