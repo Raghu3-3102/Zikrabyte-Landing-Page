@@ -21,7 +21,13 @@
     background-color: #FF7542;
     width: 100vw;
     height: 25vh;
+<<<<<<< HEAD
     margin-bottom: 5vh;
+=======
+    margin-bottom: 100px;
+    margin-left: 10px;
+  
+>>>>>>> origin/main
 }
 
 .projects_section
@@ -68,8 +74,14 @@
     background-color: #FF7542;
     width: 100vw;
     height: 25vh;
+<<<<<<< HEAD
     margin-bottom: 9.26vh;
     margin-top: 18vh;
+=======
+    margin-bottom: 125px;
+    margin-top: 150px;
+    margin-left: 10px;
+>>>>>>> origin/main
     position: relative;
 }
 
@@ -366,6 +378,7 @@
     position: relative;
     opacity: 0; 
 }
+<<<<<<< HEAD
 
 .projects_section
 .moving-text2.left {
@@ -376,3 +389,18 @@
 .moving-text2.right {
     animation: movesTextRight 0.8s ease-in-out forwards;
 }
+=======
+@keyframes movesmallText {
+    0% {
+        transform: translate(-35%, -50%) translateX(-10%);
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(85%);
+        opacity: 0;
+    }
+}
+>>>>>>> origin/main
