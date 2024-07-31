@@ -8,140 +8,277 @@
 
 
 }
-.projects_section 
+.projects_section
 .app{
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
-.projects_section 
-.block1{
+.projects_section
+.block1 {
     display: flex;
     flex-direction: column;
     background-color: #FF7542;
     width: 100vw;
-    height: 28vh;
-    margin-bottom: 100px;
-    margin-left: 10px;
-  
+    height: 25vh;
+    margin-bottom: 5vh;
 }
-.projects_section 
-.text1{
+
+.projects_section
+.text1 {
     color: white;
-    font-size: 48px;
+    font-size: 2.5vw;
     text-align: center;
-    font-weight:700;
+    font-weight: 700;
     width: 60vw;
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 7vh;
+    margin-left: 1.56vw;
 }
-.projects_section 
-.text2{
+
+.projects_section
+.text2 {
     display: flex;
     flex-direction: column;
     color: black;
-    font-size: 15px;
+    font-size: 0.78vw;
     text-align: right;
-    margin-top:90px;
-    margin-left: 90px;
+    margin-top: 12vh;
+    margin-left: 4.69vw;
 }
-.projects_section 
-.text{
+
+.projects_section
+.text {
     display: flex;
     flex-direction: row;
 }
-.projects_section 
-.line{
+
+.projects_section
+.line {
     width: 90vw;
-    height: 1px;
+    height: 0.05vh;
     background-color: black;
     margin-left: 4vw;
     margin-top: 3vh;
 }
-.projects_section 
-.block2{
+
+.projects_section
+.block2 {
     display: flex;
     flex-direction: column;
     background-color: #FF7542;
     width: 100vw;
-    height: 28vh;
-    margin-bottom: 100px;
-    margin-top: 125px;
-    margin-left: 10px;
+    height: 25vh;
+    margin-bottom: 9.26vh;
+    margin-top: 18vh;
     position: relative;
 }
-.projects_section 
-.parain{
+
+.projects_section
+.parain {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 15px;
-    margin: 0; 
+    font-size: 0.78vw;
+    margin: 0;
     padding: 0;
 }
-.projects_section 
+
+.projects_section
 .parain span {
-    display: block; 
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 0.46vh;
 }
-.projects_section 
-.parain ul{
+
+.projects_section
+.parain ul {
     display: flex;
     flex-direction: row;
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
-.projects_section 
+
+.projects_section
 .parain ul li {
-    margin-left: 25px; 
-    padding: 0; 
-    line-height: 1; 
+    margin-left: 1.3vw;
+    padding: 0;
+    line-height: 1;
 }
-.projects_section 
-.para h1{
+
+.projects_section
+.para h1 {
     font-weight: 400;
-    font-size: 20px;
-    margin: 0px;
+    font-size: 1.04vw;
+    margin: 0;
 }
-.projects_section 
-.para{
+
+.projects_section
+.para {
     margin: 0;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 0.52vw;
 }
-.projects_section 
-.Sbox{
+
+.projects_section
+.Sbox {
     display: flex;
     flex-direction: row;
-    gap:30px;
-    margin-left: 100px;
+    gap: 1.56vw;
+    margin-left: 6vw;
     position: absolute;
     z-index: 25;
     top: 100vh;
 }
-.projects_section 
-.Bbox{
+
+.projects_section
+.Bbox {
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    margin-left: 100px;
+    gap: 4.5vw;
+    margin-left: 6vw;
     position: absolute;
     z-index: 25;
-    top: 26vh;
+    top: 23vh;
 }
-.projects_section 
-.wrapper{
+
+.projects_section
+.wrapper {
     height: 120vh;
     position: relative;
 }
-.projects_section 
-.bgimg .para {
-    margin-left: 30px;
-}
+
 .projects_section
 .bgimg {
     position: relative;
 }
+.projects_section
+.responsive-image {
+    width: 40vw; 
+    height: 50vh; 
+    max-width: 100%; 
+}
+.projects_section
+.responsive-image2{
+    width: 27vw;
+    height: 45vh;
+    max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .projects_section
+    .block1 {
+        height: 38vh;
+        margin-bottom: 1vh;
+        z-index: 0;
+    }
+
+    .projects_section
+    .text1 {
+        font-size: 5vw;
+        width: 80vw;
+        margin-top: 10vh;
+        margin-left: 2vw;
+    }
+
+    .projects_section
+    .text2 {
+        font-size: 3vw;
+        text-align: center;
+        margin-top: 5vh;
+        margin-left: 0;
+    }
+
+    .projects_section
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects_section
+    .line {
+        width: 90vw;
+        height: 0.1vh;
+        margin-left: 3vw;
+        margin-top: 1vh;
+    }
+
+    .projects_section
+    .block2 {
+        height: 15vh;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        z-index: 0;
+    }
+
+    .projects_section
+    .parain {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 3vw;
+    }
+
+    .projects_section
+    .parain ul {
+        flex-direction: column;
+    }
+
+    .projects_section
+    .parain ul li {
+        margin-left: 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .projects_section
+    .para h1 {
+        font-size: 4vw;
+    }
+    .projects_section
+    .bgimg{
+        position: relative;
+    }
+
+    .projects_section
+    .Bbox {
+        flex-direction: column;
+        gap: 3vw;
+        margin-left: 4vw;
+        position: relative;
+        top: auto;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects_section
+    .Sbox{
+        flex-direction: column;
+        gap: 3vw;
+        margin-left: 4vw;
+        position: relative;
+        top: auto;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects_section
+    .wrapper {
+        height: auto;
+        position: relative;
+        z-index: 10;
+    }
+    .projects_section
+    .responsive-image {
+        width: 80vw; 
+        height: 50vh;
+    }
+    .projects_section
+    .responsive-image2{
+        width: 80vw;
+        height: 50vh;
+    }
+    
+}
+
 
 .projects_section
 .moving-text-container {
@@ -149,75 +286,93 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
     pointer-events: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .projects_section
 .moving-text {
     white-space: nowrap;
-    animation: moveText 0.8s ease-in-out forwards;
-    opacity: 1;
     position: relative;
-    margin: 10px 0;
+    opacity: 0;
 }
 
-@keyframes moveText {
+.projects_section
+.moving-text.left {
+    animation: moveTextLeft 0.7s ease-in-out forwards;
+}
+
+.projects_section
+.moving-text.right {
+    animation: moveTextRight 0.7s ease-in-out forwards;
+}
+
+@keyframes moveTextLeft {
     0% {
-        transform: translate(5%, -50%) translateX(-30%);
-        opacity: 1;
+        transform: translateX(-20%);
+        opacity: 0;
     }
-    60%{
-        opacity: 0.7;
+    50% {
+        transform: translateX(0);
+        opacity: 0.8;
     }
     100% {
-        transform: translate(-50%, -50%) translateX(75%);
+        transform: translateX(20%);
         opacity: 0;
     }
 }
 
-.projects_section
-.moving-text:nth-child(2) {
-    animation-delay: 0s;
+@keyframes moveTextRight {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-20%);
+        opacity: 0;
+    }
 }
 
-.projects_section
-.moving-text:nth-child(3) {
-    animation-delay: 0s;
-}
+
+
+
 .projects_section
 .moving-text-container2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
     pointer-events: none;
     color: white;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 1vw;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 .projects_section
-.moving-text2{
+.moving-text2 {
     white-space: nowrap;
-    animation: movesmallText 0.8s ease-in-out forwards;
-    opacity: 1;
     position: relative;
-    margin: 10px 0;
+    opacity: 0; 
 }
-@keyframes movesmallText {
-    0% {
-        transform: translate(-35%, -50%) translateX(-10%);
-        opacity: 1;
-    }
-    60%{
-        opacity: 0.7;
-    }
-    100% {
-        transform: translate(-50%, -50%) translateX(85%);
-        opacity: 0;
-    }
+
+.projects_section
+.moving-text2.left {
+    animation: movesTextLeft 0.8s ease-in-out forwards;
+}
+
+.projects_section
+.moving-text2.right {
+    animation: movesTextRight 0.8s ease-in-out forwards;
 }

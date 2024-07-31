@@ -7,36 +7,57 @@ import{useState} from 'react';
 
 
 function BImage2(){
-    const [isHovered, setIsHovered] = useState(false);
-    const [movingTextCount, setMovingTextCount] = useState(0);
+    const [lines, setLines] = useState([]);
+    const [lineCount, setLineCount] = useState(0); 
+    const mouseMovedRef = useRef(false); 
 
     const handleMouseEnter = () => {
-        setIsHovered(true);
-        setMovingTextCount(1);
+        setLines([]); 
+        setLineCount(0); 
+        mouseMovedRef.current = false; 
     };
 
     const handleMouseLeave = () => {
-        setIsHovered(false);
-        setMovingTextCount(0);
+        setLines([]); 
+        setLineCount(0); 
+        mouseMovedRef.current = false; 
     };
 
     const handleMouseMove = () => {
-        if (isHovered && movingTextCount < 2) {
-            setMovingTextCount(3);
+        if (!mouseMovedRef.current && lineCount < 5) { 
+            setLines(prevLines => [
+                ...prevLines,
+                { direction: prevLines.length % 2 === 0 ? 'right' : 'left', id: Date.now() }
+            ]);
+            setLineCount(prevCount => prevCount + 1); 
+            mouseMovedRef.current = true; 
+        } else if (mouseMovedRef.current) {
+            mouseMovedRef.current = false; 
         }
     };
 
     return (
-        <div className="bgimg" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove}>
+        <div 
+            className="bgimg" 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave} 
+            onMouseMove={handleMouseMove}
+        >
             <div style={{ position: 'relative' }}>
-                <Image src={hands} alt="Hands Image" width={650} height={383} />
-                {isHovered && (
-                    <div className="moving-text-container">
-                        {Array.from({ length: movingTextCount }).map((_, index) => (
-                            <div key={index} className="moving-text">PROJECT ONE PROJECT ONE PROJECT ONE</div>
-                        ))}
-                    </div>
-                )}
+                <Image 
+                    src={hands} 
+                    alt="Hands Image" 
+                    width={610}
+                    height={360} 
+                    className="responsive-image" 
+                />
+                <div className="moving-text-container">
+                    {lines.map((line) => (
+                        <div key={line.id} className={`moving-text ${line.direction}`}>
+                            PROJECT ONE PROJECT ONE PROJECT ONE
+                        </div>
+                    ))}
+                </div>
             </div>
             <div>
                 <Para />
