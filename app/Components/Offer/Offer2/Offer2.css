@@ -81,8 +81,16 @@
     margin-top: 1rem;
   
 }
+@media screen and (max-width: 1024px) {
+    .offer2_section{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .offer2_section .heading_cnt{
+        text-align: right;
+    }
 
-
+}
 /* when viewport less than 820px */
 @media screen and (max-width: 820px) {
     .offer2_section{
@@ -100,6 +108,9 @@
     .service_cnt{
         width: 100%;
         margin-top: 10px;
+    }
+    .offer2_section .heading_cnt{
+        text-align: center;
     }
   }
 

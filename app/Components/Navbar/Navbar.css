@@ -192,3 +192,14 @@ nav{
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width:500px) {
+    .menuItem_container ul {
+        width: 100%;
+        
+    }
+    .nav_container .menu-text{
+        font-size: 1.5rem;
+    }
+    
+}

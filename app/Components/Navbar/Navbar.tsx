@@ -12,7 +12,7 @@ export const Navbar = () => {
     const handleMenuClick = () => { 
         console.log('menu clicked');
         setIsMenuOpen(!isMenuOpen);
-    }
+  }
   return (
     <nav>
         <div className="nav_container flex">
