@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import serviceParticles from '../../../../public/assets/img/services/serviceParticles.png';
+import serviceParticles from '../../../../../public/assets/img/services/serviceParticles.png';
 import AOS from "aos";
 
 

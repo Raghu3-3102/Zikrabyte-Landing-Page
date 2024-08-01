@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import './Navbar.css'
 import Image from 'next/image';
-import zikrabyteLogo from '../../../public/assets/img/zikrabyteLogo.png' ;
+import zikrabyteLogo from '../../../../public/assets/img/zikrabyteLogo.png' ;
 
 export const Navbar = () => {
 

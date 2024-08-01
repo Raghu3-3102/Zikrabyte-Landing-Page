@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from 'next/image';
 import './Offer1.css';
-import offer1 from '../../../../public/assets/img/offer1.png';
+import offer1 from '../../../../../public/assets/img/offer1.png';
 
 
 export const Offer1 = () => {

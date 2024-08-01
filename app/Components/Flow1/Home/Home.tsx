@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import './Home.css';
-import emoji from '../../../public/assets/img/emoji.gif';
-import swiperWrapper from '../../../public/assets/img/swiperWrapper.png';
+import emoji from '../../../../public/assets/img/emoji.gif';
+import swiperWrapper from '../../../../public/assets/img/swiperWrapper.png';
 
 export const Home = () => {
 

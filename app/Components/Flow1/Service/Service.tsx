@@ -4,7 +4,7 @@ import "./Service.css";
 import AOS from "aos";
 import { Card } from "./Card/Card";
 import Image from "next/image";
-import serviceBg from "../../../public/assets/img/ServiceBg.png";
+import serviceBg from "../../../../public/assets/img/ServiceBg.png";
 
 export const Service = () => {
 
