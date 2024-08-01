@@ -1,8 +1,11 @@
 import React from 'react'
+import { OurWork } from '../Components/Flow3/OurWork/OurWork'
 
 const ServicesPage = () => {
   return (
-    <div>ServicesPage</div>
+    <div>
+      <OurWork />
+    </div>
   )
 }
 
