@@ -37,9 +37,9 @@ export const Navbar = () => {
 
         <div className={`menuItem_container ${isMenuOpen ? 'open' : ''}`}>
             <ul>
-                <Link className="uppercase hover" href=""><li>Home</li></Link>
-                <Link className="uppercase" href=""><li>Services</li></Link>
-                <Link className="uppercase" href=""><li>Products</li></Link>
+                <Link className="uppercase hover" href="/"><li>Home</li></Link>
+                <Link className="uppercase" href="/services/"><li>Services</li></Link>
+                <Link className="uppercase" href="/products"><li>Products</li></Link>
                 <Link className="uppercase" href=""><li>Careers</li></Link>
                 <Link className="uppercase" href=""><li>Projects</li></Link>
                 <Link className="uppercase" href=""><li>About Us</li></Link>

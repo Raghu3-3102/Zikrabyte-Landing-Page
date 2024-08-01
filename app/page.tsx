@@ -18,7 +18,6 @@ export default function LandingPage() {
       <Section />
       <Team />
       <Contact />
-      <Footer />
     </main>
   );
 }
