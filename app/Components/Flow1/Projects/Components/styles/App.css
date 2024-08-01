@@ -168,13 +168,13 @@
     .projects_section
     .block1 {
         height: 38vh;
-        margin-bottom: 1vh;
+        margin-bottom: 20vh;
         z-index: 0;
     }
 
     .projects_section
     .text1 {
-        font-size: 5vw;
+        font-size: 2rem;
         width: 80vw;
         margin-top: 10vh;
         margin-left: 2vw;
@@ -182,7 +182,7 @@
 
     .projects_section
     .text2 {
-        font-size: 3vw;
+        font-size: 0.8rem;
         text-align: center;
         margin-top: 5vh;
         margin-left: 0;
@@ -205,32 +205,33 @@
     .projects_section
     .block2 {
         height: 15vh;
-        margin-top: 10vh;
-        margin-bottom: 5vh;
+        margin-top: 60vh;
+        margin-bottom: 55vh;
         z-index: 0;
+        background-color: white;
     }
 
     .projects_section
     .parain {
         flex-direction: column;
         align-items: flex-start;
-        font-size: 3vw;
+        font-size: 0.8rem;
     }
 
     .projects_section
     .parain ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .projects_section
     .parain ul li {
-        margin-left: 4vw;
+        margin-left: 6vw;
         margin-bottom: 2vh;
     }
 
-    .projects_section
-    .para h1 {
-        font-size: 4vw;
+.projects_section
+.para h1 {
+        font-size: 1.5rem;
     }
     .projects_section
     .bgimg{
@@ -240,22 +241,22 @@
     .projects_section
     .Bbox {
         flex-direction: column;
-        gap: 3vw;
-        margin-left: 4vw;
-        position: relative;
-        top: auto;
-        z-index: 10;
+        gap: 12vw;
+        margin-left: 6vw;
+        position: absolute;
+        top: 40vh;
+        z-index: 25;
         justify-content: center;
         align-items: center;
     }
     .projects_section
     .Sbox{
         flex-direction: column;
-        gap: 3vw;
-        margin-left: 4vw;
-        position: relative;
-        top: auto;
-        z-index: 10;
+        gap: 2vw;
+        margin-left: 6vw;
+        position: absolute;
+        top: 180vh;
+        z-index: 25;
         justify-content: center;
         align-items: center;
     }
@@ -264,16 +265,16 @@
     .wrapper {
         height: auto;
         position: relative;
-        z-index: 10;
+        z-index: 25;
     }
     .projects_section
     .responsive-image {
-        width: 80vw; 
+        width: 85vw; 
         height: 50vh;
     }
     .projects_section
     .responsive-image2{
-        width: 80vw;
+        width: 85vw;
         height: 50vh;
     }
     
