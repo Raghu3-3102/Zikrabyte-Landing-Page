@@ -214,3 +214,297 @@
 }
 
 
+
+
+@media screen and (max-width: 1440px) {
+  .teamHeading {
+    font-size: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .th {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .imageContainer img {
+    width: 250px;
+    height: 350px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+  .ch2 {
+    font-size: 90px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .teamHeading {
+    font-size: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: 700;
+  }
+
+  .th {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .container {
+    margin: 40px 20px;
+  }
+
+  .imageContainer img {
+    width: 240px;
+    height: 300px;
+  }
+
+  .ch2 {
+    font-size: 60px;
+  }
+
+  .pen {
+    height: 60px;
+    width: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+  
+  .top {
+    height: 10px;
+    width: 14px;
+    border: 3.5px solid rgb(255, 117, 66);
+    border-radius: 3px;
+    bottom: 45px;
+  }
+  
+  .mid {
+    height: 40px;
+    width: 14px;
+    border: 3.5px solid black;
+    bottom: 8px;
+  }
+  
+  .limi {
+    margin-top: 5px;
+    height: 15px;
+    width: 3px;
+  }
+  
+  .last {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid black;
+    bottom: 0;
+  }
+
+  .lp1{
+    font-size: 18px;
+  font-weight: 500;
+  }
+  .lp2 {
+    font-size: 16px;
+    font-weight: 350;
+  }
+  .lh1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .lh {
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .lp {
+    font-size: 15px;
+    font-weight: 350;
+  }
+
+  .gr {
+    width: 600px;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .teamHeading {
+    font-size: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .th {
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .container {
+    margin: 30px 10px;
+  }
+
+  .imageContainer img {
+    width: 180px;
+    height: 250px;
+  }
+
+  .ch2 {
+    font-size: 60px;
+  }
+
+  .lp1{
+    font-size: 15px;
+    font-weight: 450;
+    margin-left: 50px;
+  }
+  .lp2 {
+    font-size: 12px;
+    font-weight: 350;
+    padding-right: 0;
+  }
+  .lh1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 0;
+  }
+  .lh {
+    font-size: 25px;
+    font-weight: 600;
+    padding-right: 0;
+  }
+  .lp {
+    font-size: 13px;
+    font-weight: 350;
+    padding-right: 0;
+  }
+
+  .gr {
+    width: 600px;
+  }
+  
+}
+
+
+@media screen and (max-width: 430px) {
+  .teamHeading {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .container {
+    margin: 20px 5px;
+  width: 407px;
+  padding-right: 10px ;
+  padding-left:10px ;
+  }
+
+  .imageContainer img {
+    width: 80px;
+    height: 100px;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    font-size: 6px;
+  }
+  .th {
+  font-size: 10px;
+  font-weight: 500;
+  padding-top: 0;
+}
+  .ch2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  
+  .pen {
+    height: 30px;
+    width: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  
+  .top {
+    height: 8px;
+    width: 8px;
+    border: 3px solid rgb(255, 117, 66);
+    border-radius: 3px;
+    bottom: 26px;
+  }
+  
+  .mid {
+    height: 25px;
+    width: 8px;
+    border: 3px solid black;
+    bottom: 4px;
+  }
+  
+  .limi {
+    margin-top: 5px;
+    height: 10px;
+    width: 2px;
+  }
+  
+  .last {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid black;
+    bottom: 0;
+  }
+
+  .letsContainer{
+    margin: 0;
+  }
+  .lp1{
+    font-size: 9px;
+    font-weight: 350;
+    margin-left: 20px;
+    
+  }
+  .lp2 {
+    font-size: 9px;
+    font-weight: 350;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .lh1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .lh {
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  .lp {
+    font-size: 9px;
+    font-weight: 350;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .gr {
+    width: 400px;
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+}
