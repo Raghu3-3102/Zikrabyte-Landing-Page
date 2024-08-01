@@ -1,118 +1,267 @@
 .footer {
-    background-color: #FF7542;
-    color: #fff;
-    width: 100%;
-    padding: 20px 0;
-  }
-  
-  .zik{
-    color: white;
-    font-size: 54px;
-    font-weight: 800;
-    margin-left: 60px;
-    margin-bottom: 5px;
+  background-color: #FF7542;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.zik{
+  color: white;
+  font-size: 54px;
+  font-weight: 800;
+  margin-left: 60px;
+  margin-bottom: 5px;
+}
+
+.hr{
+  background-color: black;
+  height: 5px;
+  border: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container {
+  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.h46{
+  margin-top: 23px;
+  padding-left: 50px;
+}
+
+.what{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.hr-1{
+  background-color: black;
+  height: 5px;
+  border: 0;
+  max-width: 100px;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  min-width: 150px;
+  display: flex;
+  align-items: baseline;
+}
+
+
+.column h4 {
+  margin-bottom: 10px;
+  color: black;
+  font-size: 20;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+.p5{
+  padding-top: 19px;
+}
+
+.column ul li,
+.column p {
+  margin:0;
+  color: black;
+  font-size: 26px;
+  font-weight: 800;
+  padding-left: 30px;
+}
+
+.contact {
+  margin-top: 20px;
+  padding-left: 60px;
+}
+
+.contact p {
+  margin: 0;
+  color: black;
+  font-size: 26px;
+}
+
+.do{
+  display: flex;
+  flex-direction: row;
+}
+
+.h4{
+  margin-top: 23px;
+}
+
+.h45{
+  margin-top: 23px;
+  padding-left: 50px;
+}
+
+
+
+.lin{
+  display: flex;
+  gap: 120px;
+  padding-bottom: 20px;
+}
+
+.line{
+  background-color: black;
+  height: 3px;
+  width: 400px;
+
+}
+
+@media screen and (max-width: 1440px) {
+  .zik {
+    font-size: 48px;
+    margin-left: 50px;
   }
 
-  .hr{
-    background-color: black;
-    height: 5px;
-    border: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
   .container {
-    padding: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 50px;
+    padding-top: 40px;
+    
   }
-  
-  .h46{
-    margin-top: 23px;
-    padding-left: 50px;
-  }
-
-  .what{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
-  }
-
-  .hr-1{
-    background-color: black;
-    height: 5px;
-    border: 0;
-    max-width: 100px;
-  }
-
-  .column {
-    flex: 1;
-    margin: 10px;
-    min-width: 150px;
-    display: flex;
-    justify-content: start;
-  }
-  
-
-  .column h4 {
-    margin-bottom: 10px;
-    color: black;
-    font-size: 20;
-  }
-  
-  .column ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .p5{
-    padding-top: 19px;
-  }
-
-  .column ul li,
-  .column p {
-    margin:0;
-    color: black;
-    font-size: 26px;
-    font-weight: 800;
-    padding-left: 30px;
-  }
-  
-  .contact {
-    margin-top: 20px;
-    padding-left: 60px;
-  }
-  
-  .contact p {
-    margin: 0;
-    color: black;
-    font-size: 26px;
-  }
-  
-  .do{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .h4{
-    margin-top: 23px;
-  }
-
-  .h45{
-    margin-top: 23px;
-    padding-left: 50px;
-  }
-
- 
-
   .lin{
-    display: flex;
-    gap: 120px;
+    gap: 170px;
     padding-bottom: 20px;
   }
 
   .line{
     background-color: black;
     height: 3px;
-    width: 400px;
+    width: 300px;
 
   }
+  .column ul li,
+.column p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact p {
+  font-size: 22px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .zik {
+    font-size: 46px;
+    margin-left: 50px;
+  }
+
+  .container {
+    padding: 50px;
+    padding-top: 20px;
+    
+  }
+
+  .line{
+    background-color: black;
+    height: 3px;
+    width: 250px;
+
+  }
+  .column ul li,
+.column p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact p {
+  font-size: 20px;
+}
+.hr{
+  height: 3px;
+}
+}
+
+@media screen and (max-width: 950px) {
+  .zik {
+    font-size: 40px;
+    margin-left: 50px;
+  }
+
+  .container {
+    padding: 50px;
+    padding-top: 10px;
+    
+  }
+  .lin{
+    gap: 70px;
+    padding-bottom: 20px;
+  }
+
+  .line{
+    height: 2px;
+    width: 250px;
+
+  }
+  .column ul li,
+.column p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.hr{
+  height: 2px;
+}
+}
+
+@media screen and (max-width: 430px) {
+  .what{
+    flex-direction: column;
+  }
+  
+  .h46,.h45{
+    padding-left:0;
+  }
+
+  .zik {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .hr,
+  .hr-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .column ul li,
+  .column p,
+  .contact p {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .lin {
+    gap:0;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .do{
+    flex-direction: column;
+  }
+  .soc{
+    padding-right: 40px;
+  }
+}
