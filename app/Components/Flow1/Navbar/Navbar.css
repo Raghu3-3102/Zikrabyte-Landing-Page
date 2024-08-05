@@ -95,6 +95,7 @@ nav{
     top: 2%;
     z-index: 10;
     cursor: pointer;
+   
 }
 
 .nav_container .menu-button-box{
@@ -193,7 +194,20 @@ nav{
     text-decoration: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
+   
+    .nav_container .nav-button{
+        
+        right: 2%;
+      
+       
+        top: 2%;
+        z-index: 10;
+        cursor: pointer;
+        
+       
+    }
+
     .menuItem_container ul {
         width: 100%;
         
