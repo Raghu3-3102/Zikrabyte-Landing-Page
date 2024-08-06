@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <Link onClick={() => handleMenuClick()} className="uppercase" href="/products"><li>Products</li></Link>
                 <Link onClick={() => handleMenuClick()} className="uppercase" href=""><li>Careers</li></Link>
                 <Link onClick={() => handleMenuClick()} className="uppercase" href=""><li>Projects</li></Link>
-                <Link onClick={() => handleMenuClick()} className="uppercase" href=""><li>About Us</li></Link>
+                <Link onClick={() => handleMenuClick()} className="uppercase" href="/about"><li>About Us</li></Link>
             </ul>
         </div>
         </div>

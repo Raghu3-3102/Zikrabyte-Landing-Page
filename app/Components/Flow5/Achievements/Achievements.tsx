@@ -46,7 +46,7 @@ export const Achievements = () => {
                 clients across various industries. Let our work speak for itself.</p>
         </div>
 
-<div className="flex flex-col items-center mt-16">
+<div className="flex flex-col items-center my-16">
     {/* <AchievementCard achievement={achievemetnts[0]}/>  */}
     {achievemetnts.map((achievement) => (
         <AchievementCard achievement={achievement} key={achievement.id}/>
