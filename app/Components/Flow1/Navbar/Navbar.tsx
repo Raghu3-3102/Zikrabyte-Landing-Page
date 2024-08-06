@@ -10,7 +10,7 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     const handleMenuClick = () => { 
-        console.log('menu clicked');
+        //console.log('menu clicked');
         setIsMenuOpen(!isMenuOpen);
   }
   return (
