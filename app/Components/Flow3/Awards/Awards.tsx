@@ -30,7 +30,7 @@ export const Awards = () => {
     ]
 
   return (
-    <div className="achievement_section w-screen flex flex-col items-center bg-white pt-16">
+    <div className="achievement_section w-screen flex flex-col items-center bg-white py-16">
       <div className="w-full flex flex-col text-center items-center">
         <h2 className="text-5xl sm:text-7xl font-semibold text-gray-500">
           Our <span className="text-orange-500">Awards & Recognitions</span>
