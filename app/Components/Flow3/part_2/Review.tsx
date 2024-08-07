@@ -168,7 +168,7 @@ export const Review = () => {
           <p className=" px-20 pb-20 font-bold text-base">
             “I have six years of experience working in software teams as a
             product manager and Oleksandr (CEO of UXIS) is one of the most
-            impressive UX designers I've worked with.”
+            impressive UX designers Ive worked with.”
           </p>
 
           <p className=" px-20 text-base font-light text-gray-500">
@@ -235,7 +235,7 @@ export const Review = () => {
             <p className="text-base font-light text-gray-500 ">
               Harry James,
               <br />
-              Co-Founder, Ted's Health, UK
+              Co-Founder, Teds Health, UK
             </p>
           </div>
 
@@ -275,16 +275,20 @@ export const Review = () => {
             />
           </div>
           <div className="flex justify-end pr-10">
-            <button className="border-2 border-black font-bold rounded-full p-4">Review all on Clutch</button>
+            <button className="border-2 border-black font-bold rounded-full p-4">
+              Review all on Clutch
+            </button>
           </div>
           <div className="flex">
             <p className="text-sm font-light p-16">
-            Danny Trichter,<br />
-            CEO, Accessibility Checker, Israe.
+              Danny Trichter,
+              <br />
+              CEO, Accessibility Checker, Israe.
             </p>
             <p className="text-sm font-light p-16">
-            Kanan Hajizada,<br />
-            Managing Partner, Fintech Startup, Azerbaijan
+              Kanan Hajizada,
+              <br />
+              Managing Partner, Fintech Startup, Azerbaijan
             </p>
           </div>
         </div>
