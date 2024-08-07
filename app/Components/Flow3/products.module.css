@@ -1,0 +1,15 @@
+.ourWork_section {
+    width: 100vw;
+    min-height: 100vh;
+}
+.lines{
+    width: 30vw;
+    height: 0.5px;
+    background-color: #222222;
+    margin-left: 5vw;
+}
+.linesdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+}

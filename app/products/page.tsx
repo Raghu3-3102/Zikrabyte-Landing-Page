@@ -1,8 +1,10 @@
-import React from 'react'
+"use client"
+import React,{useState,useEffect} from 'react'
+import Products from '../Components/Flow3/Product'
 
 const ProductsPage = () => {
   return (
-    <div>Product Page</div>
+    <Products />
   )
 }
 

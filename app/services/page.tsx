@@ -1,5 +1,5 @@
 import React from 'react'
-import { OurWork } from '../Components/Flow3/OurWork/OurWork'
+import { OurWork } from '../Components/Flow3/OurWork/Product'
 
 const ServicesPage = () => {
   return (
