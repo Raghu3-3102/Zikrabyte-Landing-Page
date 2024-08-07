@@ -1,8 +1,11 @@
 import React from 'react'
+import { OurWork } from '../Components/Flow3/OurWork/OurWork'
 
 const ProductsPage = () => {
   return (
-    <div>Product Page</div>
+    <div>
+      <OurWork />
+    </div>
   )
 }
 
