@@ -1,10 +1,11 @@
-import style from './About_1.module.css'
+import FirstPage from "./content/FirstPage"
+import SecondPage from "./content/SecondPage"
 
 function About_1() {
-  return (
-    <div className={style.about_main_cnt}>
-      Raghu
-    </div>
+  return (<>
+  <FirstPage />
+  <SecondPage />
+  </>
   )
 }
 
