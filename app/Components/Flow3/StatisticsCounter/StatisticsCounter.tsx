@@ -1,7 +1,7 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import './StatisticsCounter.css';
-import ClientIcon from '../../../../public/assets/img/Statistics/clientIcon.gif';
+import ClientIcon from '../../../../public/assets/img/Statistics/ClientIcon.gif';
 import ThreeEmoji from '../../../../public/assets/img/Statistics/ThreeEmoji.gif'; 
 import projectIcon from '../../../../public/assets/img/Statistics/projectsIcon.png';
 import illustration1 from '../../../../public/assets/img/Statistics/illustration1.png';
