@@ -38,7 +38,7 @@ function Service_2() {
              <div className={stylese.right_cnt}>
               {content.map((cnt,ind)=>(
 
-              <div className={stylese.show_service}>{cnt}   <div className={stylese.arrow}>&#x2192;</div></div>
+              <div key={ind} className={stylese.show_service}>{cnt}   <div className={stylese.arrow}>&#x2192;</div></div>
 
               ))}
               

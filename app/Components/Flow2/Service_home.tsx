@@ -92,7 +92,7 @@ function Service_home() {
      
       </div>
       <div className={styles.content}>
-       
+        <Navbar />
          
         <div className={styles.left_cnt}>
           
