@@ -17,7 +17,7 @@ const FirstPage = () => {
         </div>
         <div className={style.animBox}>
       {/* <Image src={TopAnimation} alt='some cool animation' className={style.topAnimationField}/> */}
-      <Image src={AboutEmoji} alt='emoji animation'/>
+      <Image src={AboutEmoji} alt='emoji animation' unoptimized={true}/>
         </div>
 
     </div>
