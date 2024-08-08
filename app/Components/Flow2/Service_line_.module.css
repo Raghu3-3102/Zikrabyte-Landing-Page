@@ -1,0 +1,29 @@
+.line_cnt{
+
+    width: 100%;
+    height: 13px;
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0px;
+
+
+}
+
+.circule{
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+   
+}
+.line{
+
+    display: flex;
+    height: 30%;
+    width: 80%;
+    background-color:black;
+}
