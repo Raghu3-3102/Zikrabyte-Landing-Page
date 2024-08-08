@@ -1,0 +1,125 @@
+.ourWork_section {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.ourWork_section .heading_cnt h2{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.ourWork_section .outerImgCnt{
+    height: 70vh;
+    /* border: 2px solid black; */
+    background-image: url('/assets/img/ourWork/ourWorkBackgroundImg.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;    
+    border-radius: 15px;
+}
+.ourWork_section .outerImgCnt img{
+    max-width: 70vw;
+    
+}
+.ourWork_section .img_cnt{
+    /* z-index: -11; */
+    width: 150vw    ;
+    max-width: 200vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    /* overflow: hidden;  */
+    transform: translate(-12%, -25%) rotate(-10deg);
+    animation: slideUpDown 5s linear infinite;
+}
+
+@keyframes slideUpDown {
+    0%{
+        transform: translate(-12%, -20%) rotate(-10deg);
+    }
+
+    50%{
+        transform: translate(-18%, -30%) rotate(-10deg);
+    }
+    100%{
+        transform: translate(-12%, -20%) rotate(-10deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .ourWork_section {
+        width: 95vw;
+        height: 80vh;
+    }
+    .ourWork_section .heading_cnt h2 {
+        font-size: 3rem;
+    }
+
+    .ourWork_section .outerImgCnt {
+        height: 60vh;
+        border-radius: 10px;
+    }
+
+    .ourWork_section .outerImgCnt img {
+        max-width: 80vw;
+    }
+
+    .ourWork_section .img_cnt {
+        width: 130vw;
+        max-width: 180vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .ourWork_section {
+        padding: 0.5rem;
+        height: 60vh;
+    }
+
+    .ourWork_section .heading_cnt h2 {
+        font-size: 2.5rem;
+    }
+
+    .ourWork_section .outerImgCnt {
+        height: 50vh;
+        border-radius: 8px;
+    }
+
+    .ourWork_section .outerImgCnt img {
+        max-width: 90vw;
+    }
+
+    .ourWork_section .img_cnt {
+        width: 120vw;
+        max-width: 160vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .ourWork_section {
+        padding: 0.25rem;
+        height: 47vh;
+        width: 90vw;
+    }
+
+    .ourWork_section .heading_cnt h2 {
+        font-size: 2rem;
+    }
+
+    .ourWork_section .outerImgCnt {
+        height: 40vh;
+        border-radius: 5px;
+    }
+
+    .ourWork_section .outerImgCnt img {
+        max-width: 100vw;
+    }
+
+    .ourWork_section .img_cnt {
+        width: 100vw;
+        max-width: 140vw;
+    }
+}

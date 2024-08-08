@@ -1,10 +1,18 @@
-"use client"
 import React,{useState,useEffect} from 'react'
+import { OurWork } from '../Components/Flow3/OurWork/OurWork'
+import { Client } from '../Components/Flow3/part_2/Client'
+import { Domain } from '../Components/Flow3/part_2/Domain'
+import { Review } from '../Components/Flow3/part_2/Review'
 import Products from '../Components/Flow3/Product'
 
 const ProductsPage = () => {
   return (
-    <Products />
+    <div>
+      <Products />
+      <Client />
+      <Domain />
+      <Review />
+    </div>
   )
 }
 

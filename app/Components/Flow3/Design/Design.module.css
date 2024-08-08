@@ -84,6 +84,9 @@
     }
 }
 @media (max-width: 480px) {
+    .design{
+        margin-bottom: 10vh;
+    }
     .textbox h2 {
         font-size: 30px;
     }

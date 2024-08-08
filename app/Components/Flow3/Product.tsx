@@ -1,11 +1,11 @@
 'use client';
-import React, { use } from 'react';
+import React from 'react';
 import styles from './products.module.css';
 import Product from './Process/Process';
 import UX from './UX-design/UX'
 import UI from './UI-design/UI'
 import Testing from './Testing/Testing'
-import OurWorks from './OurWork/Ourwork/Ourwork'
+import Work from './Work/Work'
 import Design from './Design/Design'
 import Main from './MainDir/Main'
 
@@ -25,7 +25,7 @@ export const Products = () => {
             <div className={styles.lines}></div>
             </div>
             <Testing />
-            <OurWorks />
+            <Work />
             <Design />
             <Main />
         </div>
