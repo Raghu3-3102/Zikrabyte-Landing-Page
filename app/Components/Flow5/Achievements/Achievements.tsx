@@ -37,12 +37,12 @@ export const Achievements = () => {
     ]
 
   return (
-    <div className='achievement_section w-screen flex flex-col items-center bg-black pt-16'>
+    <div className='achievement_section w-screen my-8 px-2 flex flex-col items-center bg-black pt-16'>
         <div className="w-full flex flex-col text-center items-center">
             <h2 className="text-5xl sm:text-7xl  font-semibold text-white">
                 Our <span className='text-orange-500'>Achievements</span>
             </h2>
-                <p className='w-[60%] mt-8 text-lg text-white'>Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we&apos;ve had with diverse
+                <p className='lg:w-[60%] mt-8 text-lg text-white'>Witness the brilliance of our previous projects. Our portfolio showcases the successful collaborations we&apos;ve had with diverse
                 clients across various industries. Let our work speak for itself.</p>
         </div>
 

@@ -30,12 +30,12 @@ export const Awards = () => {
     ]
 
   return (
-    <div className="achievement_section w-screen flex flex-col items-center bg-white py-16">
-      <div className="w-full flex flex-col text-center items-center">
+    <div className="achievement_section w-screen flex flex-col items-center  bg-white py-16">
+      <div className="w-full flex flex-col text-center items-center px-4" >
         <h2 className="text-5xl sm:text-7xl font-semibold text-gray-500">
           Our <span className="text-orange-500">Awards & Recognitions</span>
         </h2>
-        <p className="w-[60%] mt-8 text-xl text-black">
+        <p className="lg:w-[60%] mt-8 text-xl text-black">
           Witness the brilliance of our previous projects. Our portfolio
           showcases the successful collaborations we&apos;ve had with diverse
           clients across various industries. Let our work speak for itself.
