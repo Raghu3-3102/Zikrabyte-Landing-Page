@@ -1,0 +1,271 @@
+.Box{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+    
+    .images {
+      width: 95vw;
+      margin-left: 20px;
+    }
+    
+    .crmManagement {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      display: flex;
+      flex-direction: row;
+      gap: 10vw;
+      margin-left: 20px;
+    }
+    
+    .crmManagement h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .details {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    
+    .detail {
+      flex: 1;
+    }
+    .text{
+      display: flex;
+      flex-direction: row;
+      gap:10vw;
+      width: 100vw;
+    }
+    
+    
+    .details h4 {
+      margin-top: 10px;
+      margin-bottom: 2vh;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    
+    .detail p {
+      font-size: 1em;
+      margin-top: 5px;
+    }
+    .buttons p{
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 7px;
+    white-space: nowrap; 
+    }
+    .buttons{
+      display: flex ;
+      flex-direction: row;
+    }
+    .box1{
+      display: flex;
+      flex-direction: column;
+    }
+    .twoimages{
+      display: flex;
+      flex-direction: row;
+      gap: 5vw;
+      align-items: center;
+      margin-left: 30px;
+      margin-bottom: 7vh;
+    }
+    .bignum{
+      display: flex;
+      flex-direction: row;
+    }
+    .bignum h1{
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .bignum p{
+      padding-top: 20px;
+      margin-left: 10px;
+    }
+    .textbox{
+      display: flex;
+      flex-direction: row;
+      margin-top: 2vh;
+      margin-bottom: 5vh;
+    }
+    .project{
+      display: flex;
+      flex-direction: column;
+    }
+    .projects{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 12vw;
+      margin-left: 9vw;
+    }
+    .project h3{
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 1vh;
+    }
+    .projects h1{
+      font-size: 35px;
+      font-weight: 500;
+      margin-right: 1vw;
+    }
+    .twoimages img{
+      width: 45vw;
+    }
+  
+    
+  /* Adjust for large screens */
+  @media (max-width: 1200px) {
+    .crmManagement, .text, .twoimages {
+      flex-direction: column;
+      align-items: center; 
+    }
+    .crmManagement {
+      gap: 5vw;
+    }
+    .text {
+      width: 100%;
+      gap: 5vw;
+    }
+    .projects {
+      width: 20vw;
+    }
+    .twoimages img {
+      width: 70vw;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+      text-align: center; 
+    }
+    .images {
+      width: 90vw;
+    }
+    .crmManagement {
+      gap: 5vw;
+    }
+    .crmManagement h3 {
+      font-size: 1.5rem;
+    }
+    .details {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .text {
+      width: 100%;
+      gap: 5vw;
+    }
+    .buttons {
+      flex-direction: column;
+      align-items: center; 
+    }
+    .projects {
+      width: 30vw;
+    }
+    .twoimages img {
+      width: 90vw; 
+    }
+    .bignum h1 {
+      font-size: 30px;
+    }
+    .bignum p {
+      font-size: 14px;
+    }
+    .project h3 {
+      font-size: 25px;
+    }
+    .projects h1 {
+      font-size: 30px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+      text-align: center; 
+    }
+    .images {
+      width: 85vw;
+    }
+    .crmManagement {
+      gap: 3vw;
+    }
+    .crmManagement h3 {
+      font-size: 1.2rem;
+    }
+    .crmbox{
+      padding-left: 0;
+      margin-right: 20vw;
+    }
+    .details {
+      gap: 5px;
+    }
+    .details h4 {
+      font-size: 1rem;
+    }
+    .detail p {
+      font-size: 0.9em;
+    }
+    .buttons{
+      flex-direction: row;
+    }
+    .buttons p {
+      font-size: 10px;
+      padding: 6px 10px;
+      margin: 2px;
+    }
+    .textbox {
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      flex-direction: column;
+      margin-left: 3vh;
+    }
+    .bignum h1 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+    .bignum p {
+      font-size: 12px;
+    }
+    .project h3 {
+      font-size: 20px;
+    }
+    .projects {
+      width: 40vw;
+      margin:10px;
+    }
+    .projects h1 {
+      font-size: 25px;
+      margin:10px;
+    }
+    .twoimages img {
+      width: 80%; 
+      margin-left: 2vh;
+    }
+  }

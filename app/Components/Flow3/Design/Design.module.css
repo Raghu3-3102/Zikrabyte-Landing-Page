@@ -1,0 +1,103 @@
+.design{
+    display: flex;
+    flex: row;
+    margin-left: 30px;
+    margin-top: 5vh;
+    margin-bottom:5vh;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+.btndiv{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw;
+}
+.textbox h2{
+    font-size: 70px;
+    font-weight: 600;
+    color: #222222;
+}
+.textbox span{
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+.textbox div{
+    width: 27vw;
+    margin: 5vh 0;
+}
+.btndiv button{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #222222;
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 12vw;
+}
+.image{
+    margin-left: 30vw;
+}
+
+@media (max-width: 1200px) {
+    .textbox h2 {
+        font-size: 50px;
+    }
+    .textbox div {
+        width: 35vw;
+    }
+    .btndiv button {
+        width: 15vw;
+    }
+    .image {
+        margin-left: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .design {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .textbox {
+        width: 80vw;
+    }
+    .textbox h2 {
+        font-size: 40px;
+    }
+    .textbox div {
+        width: 70vw;
+    }
+    .btndiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+    .btndiv button {
+        width: 60vw;
+    }
+    .image {
+        margin-left: 0;
+        margin-top: 3vh;
+    }
+}
+@media (max-width: 480px) {
+    .design{
+        margin-bottom: 10vh;
+    }
+    .textbox h2 {
+        font-size: 30px;
+    }
+    .textbox div {
+        width: 85vw;
+    }
+    .btndiv button {
+        width: 70vw;
+        margin-right:8vh;
+    }
+    .image{
+        margin-left: 3vh;
+    }
+}
