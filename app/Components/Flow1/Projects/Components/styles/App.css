@@ -3,7 +3,7 @@
 .projects_section{
     width: 100vw;
     min-height: 155vh;
-    margin-top: 10vw;
+    /* margin-top: 10vw; */
     background-color: #fff;
 
 
@@ -377,3 +377,4 @@
 .moving-text2.right {
     animation: movesTextRight 0.8s ease-in-out forwards;
 }
+

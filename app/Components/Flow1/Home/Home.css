@@ -86,8 +86,9 @@
 
 @media screen and (max-width: 1280px) {
 .home_section{
-    height: 120vh;
+    /* height: 120vh; */
     transform: scale(0.7) translateY(-20%);
+    height: fit-content;
 
 }
 .home_section .emoji1{
@@ -153,6 +154,7 @@
 @media screen and (max-width:600px) {
     .home_section{
         transform: scale(0.4) translateY(-60%);
+        height: fit-content;
     }
 
     .home_section .swiper-wrapper{
@@ -182,5 +184,14 @@
     }
     .home_section .emoji2{
         transform: translate(295px, 583px);
+    }
+}
+
+/* when viewport less than 500px */
+@media screen and (max-width:400px) {
+    .home_section{
+
+        transform: scale(0.28) translateY(-80%);
+        height: 100vh;
     }
 }
