@@ -19,7 +19,7 @@ export const Offer1 = () => {
 
   
   return (
-    <div className='offer1_section p-10'  
+    <div className='offer1_section p-10 relative'  
          data-aos="fade-up"
          data-aos-duration="500"
          data-aos-easing="ease-in-out"

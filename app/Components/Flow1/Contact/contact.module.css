@@ -1,6 +1,6 @@
 
 .con {
-  background-image: url(/assets/images/fbg12.png);
+  background-image: url(/assets/images/hero.png);
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -88,18 +88,35 @@
   align-items: center;
 }
 
+@media screen and (max-width:1950px) {
+  .con {
+    background-image: url(/assets/images/hero_1.png);
+  }
+  .formContainer{
+    padding-right: 200px;
+  }
+  .mai{
+    padding-left: 100px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .ch2 {
     font-size: 45px;
     
   }
 
+  .mai{
+    padding-left:0;
+  }
   .cp2 {
     font-size: 22px;
     padding-top: 50px;
    
   }
-
+  .formContainer{
+    padding-right: 0;
+  }
   .form {
     padding-left: 0;
     margin-right: 100px;
@@ -132,6 +149,7 @@
   .con {
     flex-direction: column;
     align-items: center;
+    background-image: url(/assets/images/hero_2.png);
   }
 
   .ch2 {
@@ -165,6 +183,7 @@
   .con {
     flex-direction: column;
     align-items: center;
+    background-image: url(/assets/images/hero_3.png);
   }
 
   .ch2 {

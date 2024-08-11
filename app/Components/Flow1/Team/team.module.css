@@ -5,6 +5,7 @@
   font-weight: 900;
   padding-left: 200px;
   padding-right: 200px;
+  margin-top: 50px;
   line-height: 1.5;
 }
 
@@ -63,10 +64,6 @@
   margin-bottom: 150px;
 }
 
-.ani {
-  /* display: flex;
-  align-items: center; */
-}
 
 .ch2 {
   font-size: 100px;
@@ -76,7 +73,7 @@
   align-items: center;
   margin-bottom: 0;
   margin-left: 50px;
-  margin-top: 160px;
+  /* margin-top: 160px; */
 }
 
 
@@ -214,7 +211,34 @@
 }
 
 
+@media screen and (max-width:1950px) {
+  .teamHeading {
+    font-size: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 
+  .th {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .imageContainer img {
+    width: 400px;
+    height: 500px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+  .ch2 {
+    font-size: 90px;
+  }
+  .gr{
+    width: 800px;
+  } 
+}
 
 @media screen and (max-width: 1440px) {
   .teamHeading {
@@ -396,6 +420,7 @@
     font-size: 15px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 0;
   }
 
   .container {
@@ -422,7 +447,7 @@
 }
   .ch2 {
     font-size: 30px;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-left: 20px;
   }
   
