@@ -9,7 +9,7 @@ import gif3 from './Image/03.gif'
 import gif4 from './Image/04.gif'
 import gif5 from './Image/05.gif'
 import gif6 from './Image/06.gif'
-import { Navbar } from '../Flow1/Navbar/Navbar';
+
 
 function Service_home() {
 

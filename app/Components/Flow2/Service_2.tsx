@@ -32,13 +32,16 @@ function Service_2() {
         layout="fill"
         objectFit="contain"
         className={stylese.image}
+        quality={75}
+        style={{ width: '100%', height: '100%' }}
       />
     </div>
   </div>
              <div className={stylese.right_cnt}>
+              <div className={stylese.lineup}><p>SPECIALITIES</p> <div className={stylese.linesd}></div> </div>
               {content.map((cnt,ind)=>(
 
-              <div key={ind} className={stylese.show_service}>{cnt}   <div className={stylese.arrow}>&#x2192;</div></div>
+              <div key={ind} className={stylese.show_service}><h3>{cnt}</h3>   <div className={stylese.arrow}>&#x2192;</div></div>
 
               ))}
               
