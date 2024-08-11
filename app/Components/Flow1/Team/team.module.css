@@ -63,10 +63,6 @@
   margin-bottom: 150px;
 }
 
-.ani {
-  /* display: flex;
-  align-items: center; */
-}
 
 .ch2 {
   font-size: 100px;
@@ -214,7 +210,34 @@
 }
 
 
+@media screen and (max-width:1950px) {
+  .teamHeading {
+    font-size: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 
+  .th {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+
+  .imageContainer img {
+    width: 400px;
+    height: 500px;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+  .ch2 {
+    font-size: 90px;
+  }
+  .gr{
+    width: 800px;
+  } 
+}
 
 @media screen and (max-width: 1440px) {
   .teamHeading {

@@ -108,7 +108,7 @@ export const Service = () => {
 
 
   return (
-    <div className="service_section" data-aos="fade-up">
+    <div className="service_section pb-8" data-aos="fade-up">
       <Image className="bg_img" src={serviceBg} alt=""/>
 
       <div className="heading_cnt text-center mt-32" >

@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div>
     <div className={styles.con}>
-      <div>
+      <div className={styles.mai}>
         <h2 className={styles.ch2}>
           Have a Project! <br />
           Let&apos;s discuss

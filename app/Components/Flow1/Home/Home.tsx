@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import './Home.css';
 import emoji from '../../../../public/assets/img/emoji.gif';
-import swiperWrapper from '../../../../public/assets/img/swiperWrapper.png';
+import swiperWrapper from '../../../../public/assets/img/swiperWrapper.gif';
 
 export const Home = () => {
 
@@ -60,7 +60,7 @@ export const Home = () => {
   <Image src={emoji} alt="emoji2" width={75} height={75} unoptimized />
 </div>
 
-<div className="swiper-wrapper">  
+<div className="swiper-wrapper mt-12 sm:mt-4">  
   <Image src={swiperWrapper} alt="swiper-wrapepr" />
 </div>
     </div>
