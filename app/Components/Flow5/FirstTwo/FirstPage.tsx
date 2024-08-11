@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { Logo, TopAnimation } from './Images'
 import AboutEmoji from '../../../../public/assets/img/AboutEmoji.gif'
 import style from './About.module.css'
 
@@ -16,10 +15,8 @@ const FirstPage = () => {
           <p className={style.topPara}>Welcome to DigitX, your trusted partner in the dynamic world of digital solutions. We are a passionate team of creative minds, tech enthusiasts, and digital strategists, dedicated to empowering businesses and individuals in the digital realm. Our mission is to deliver exceptional results that drive success, create meaningful connections, and bring your digital vision to life.</p>
         </div>
         <div className={style.animBox}>
-      {/* <Image src={TopAnimation} alt='some cool animation' className={style.topAnimationField}/> */}
-      <Image src={AboutEmoji} alt='emoji animation' unoptimized={true}/>
+      <Image src={AboutEmoji} alt='emoji animation' unoptimized={true} className={style.animationResizer}/>
         </div>
-
     </div>
     </>
   )
