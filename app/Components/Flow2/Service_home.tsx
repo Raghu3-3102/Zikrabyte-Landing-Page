@@ -100,7 +100,7 @@ function Service_home() {
           <div className={styles.write_up_2}>WE GOT YOU !</div>
          </> : 
          <> <div className={styles.write_up}>We Are</div>
-         <div className={styles.write_up}>Specilized in</div></>}
+         <div className={styles.write_up}>Specilized in.</div></>}
           
 
          <div className={styles.changrd_write_up}>
