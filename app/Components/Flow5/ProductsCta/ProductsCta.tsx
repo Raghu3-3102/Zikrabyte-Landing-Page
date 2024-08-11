@@ -4,7 +4,7 @@ import ZikraByteLogo from "../../../../public/assets/img/Achievements/ZikraByteL
 
 export const ProductsCta = () => {
   return (
-    <div className='flex flex-col justify-center items-center w-screen h-screen bg-black '>
+    <div className='flex flex-col justify-center items-center w-screen h-[screen] py-2 bg-black '>
         <div className="flex  flex-col justify-center items-center  max-w-[1024px] text-white p-4">
 
         <h3 className="text-5xl text-center font-semibold mb-2 mt-8">

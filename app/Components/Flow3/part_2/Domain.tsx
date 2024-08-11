@@ -9,7 +9,7 @@ import it from "../../../../public/assets/client_img/it.png";
 
 export const Domain = () => {
   return (
-    <div className="flex flex-wrap items-center my-24 mx-auto max-w-screen-xl">
+    <div className="flex flex-wrap items-center my-0 md:my-12 md:mb-0 lg:mb-24 lg:my-24 mx-auto max-w-screen-xl">
       <div className="w-full md:w-1/2 p-6 flex flex-wrap items-center justify-around gap-14 lg:gap-28">
         <div className="flex flex-col items-center justify-center p-6 gap-20 md:gap-40 lg:gap-40">
           <Image
@@ -59,8 +59,8 @@ export const Domain = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 pb-24">
-        <div className="pl-10 md:pl-10 lg:pl-28">
+      <div className="w-full md:w-1/2 md:pb-0 lg:pb-24">
+        <div className="pl-5 md:pl-10 lg:pl-28">
           <h1 className="text-4xl font-bold my-7">Business domains</h1>
           <p className="text-base w-10/12 text-gray-700 mb-7">
             We boast extensive experience with products and projects across
