@@ -106,15 +106,15 @@ export const Service = () => {
 };
 
 
-
   return (
     <div className="service_section pb-8" data-aos="fade-up">
-      <Image className="bg_img" src={serviceBg} alt=""/>
+      <Image className="bg_img upper" src={serviceBg} alt=""/>
+      <Image className="bg_img lower" src={serviceBg} alt=""/>
 
       <div className="heading_cnt text-center mt-32" >
         <div className="heading_text_cnt" >
           <h2 className="text-white text-5xl font-medium" data-aos="fade-up">Our Service</h2>
-          <p className="text-white text-xl mt-5" data-aos="fade-up">
+          <p className="text-white text-xl mt-5 " data-aos="fade-up">
             Data guides us. With the perfect balance of performance,
             <br />
             creativity and tech, we&apos;re here to fuel your growth journey.
@@ -133,7 +133,7 @@ export const Service = () => {
       </div>
 :
       //Desktop cards code
-      <div className="cards_cnt">
+      <div className="cards_cnt mx-6">
       <div className="card_cnt_col col1">
         <Card card={cards[0]}  gradient={getRandomGradient()} /> 
         <Card card={cards[3]}  gradient={getRandomGradient()}/> 

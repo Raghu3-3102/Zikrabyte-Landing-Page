@@ -1,12 +1,17 @@
 :root{
-    --emoji1-y: 165px;
+    /* --emoji1-y: 165px;
     --emoji2-y: 292px;
     --emoji1-x: -509px;
-    --emoji2-x: 485px;
+    --emoji2-x: 485px; */
+    --emoji1-y: 172px;
+    --emoji2-y: 300px;
+    --emoji1-x: -502px;
+    --emoji2-x: 466px;
     --line-y: 130px
 }
 .home_section{
     height: 150vh;
+    max-height: fit-content;
 }
 .headline{
     text-align: center;
@@ -92,13 +97,14 @@
 
 }
 .home_section .emoji1{
-    transform: translate(-116px, 209px);                       
+    transform: translate(-122px, 219px);                     
 }
 .home_section .emoji2{
-    transform: translate(295px, 466px);
+    transform: translate(282px, 475px);
 }
 .home_section .swiper-wrapper{
     width: 180vw;
+    
 }  
 .home_section .swiper-wrapper img{
     max-width: 180vw;
@@ -123,10 +129,10 @@
         max-width: 200vw;
     }
     .home_section .emoji1{
-        transform: translate(-116px, 252px);
+        transform: translate(-122px, 261px);
     }
     .home_section .emoji2{
-        transform: translate(295px, 508px);
+        transform: translate(281px, 517px);
     }
 }
 
@@ -180,10 +186,11 @@
         line-height: inherit;
     }
     .home_section .emoji1{
-        transform: translate(-116px, 326px);
+        transform: translate(-121px, 311px);
+
     }
     .home_section .emoji2{
-        transform: translate(295px, 583px);
+        transform: translate(282px, 568px);
     }
 }
 

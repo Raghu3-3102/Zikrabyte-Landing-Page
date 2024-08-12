@@ -33,7 +33,7 @@ export const Offer1 = () => {
               data-aos-delay="100"
               >
             <h2 className='text-4xl font-semibold '>What We Offer</h2>
-            <p className='xl:w-1/2 text-xl mt-5 ' >
+            <p className='md:w-1/2 text-xl mt-5 ' >
             {/* lg:w-3/4 */}
             We are a based web design team. Combining high-end design with strategic
             SEO to elevate brands and increase website traffic. We&apos;ll use the same methods
