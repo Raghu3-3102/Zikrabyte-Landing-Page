@@ -2,11 +2,8 @@
 
 .projects_section{
     width: 100vw;
-    min-height: 155vh;
-    /* margin-top: 10vw; */
+    margin-bottom: 2vh;
     background-color: #fff;
-
-
 }
 .projects_section
 .app{
@@ -73,6 +70,7 @@
     position: relative;
 }
 
+
 .projects_section
 .parain {
     display: flex;
@@ -95,11 +93,14 @@
     flex-direction: row;
     padding: 0;
     margin: 0;
+    list-style: disc;
+    margin-left: 2vw;
+    gap: 2vw;
 }
 
 .projects_section
 .parain ul li {
-    margin-left: 1.3vw;
+    margin-left: 0;
     padding: 0;
     line-height: 1;
 }
@@ -142,7 +143,7 @@
 
 .projects_section
 .wrapper {
-    height: 120vh;
+    height: auto;
     position: relative;
 }
 
@@ -162,125 +163,6 @@
     height: 45vh;
     max-width: 100%;
 }
-
-
-@media (max-width: 768px) {
-    .projects_section
-    .block1 {
-        height: 38vh;
-        margin-bottom: 20vh;
-        z-index: 0;
-    }
-
-    .projects_section
-    .text1 {
-        font-size: 2rem;
-        width: 80vw;
-        margin-top: 10vh;
-        margin-left: 2vw;
-    }
-
-    .projects_section
-    .text2 {
-        font-size: 0.8rem;
-        text-align: center;
-        margin-top: 5vh;
-        margin-left: 0;
-    }
-
-    .projects_section
-    .text {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projects_section
-    .line {
-        width: 90vw;
-        height: 0.1vh;
-        margin-left: 3vw;
-        margin-top: 1vh;
-    }
-
-    .projects_section
-    .block2 {
-        height: 15vh;
-        margin-top: 60vh;
-        margin-bottom: 55vh;
-        z-index: 0;
-        background-color: white;
-    }
-
-    .projects_section
-    .parain {
-        flex-direction: column;
-        align-items: flex-start;
-        font-size: 0.8rem;
-    }
-
-    .projects_section
-    .parain ul {
-        flex-direction: row;
-    }
-
-    .projects_section
-    .parain ul li {
-        margin-left: 6vw;
-        margin-bottom: 2vh;
-    }
-
-.projects_section
-.para h1 {
-        font-size: 1.5rem;
-    }
-    .projects_section
-    .bgimg{
-        position: relative;
-    }
-
-    .projects_section
-    .Bbox {
-        flex-direction: column;
-        gap: 12vw;
-        margin-left: 6vw;
-        position: absolute;
-        top: 40vh;
-        z-index: 25;
-        justify-content: center;
-        align-items: center;
-    }
-    .projects_section
-    .Sbox{
-        flex-direction: column;
-        gap: 2vw;
-        margin-left: 6vw;
-        position: absolute;
-        top: 180vh;
-        z-index: 25;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .projects_section
-    .wrapper {
-        height: auto;
-        position: relative;
-        z-index: 25;
-    }
-    .projects_section
-    .responsive-image {
-        width: 85vw; 
-        height: 50vh;
-    }
-    .projects_section
-    .responsive-image2{
-        width: 85vw;
-        height: 50vh;
-    }
-    
-}
-
-
 .projects_section
 .moving-text-container {
     position: absolute;
@@ -377,4 +259,188 @@
 .moving-text2.right {
     animation: movesTextRight 0.8s ease-in-out forwards;
 }
+
+@media (max-width:1024px){
+    .projects_section{
+        margin-bottom: 1vh;
+    }
+    .projects_section .block1 {
+        height: 24vh;
+        margin-bottom: 8vh;
+    }
+
+    .projects_section .text1 {
+        font-size: 2rem;
+        width: 70vw;
+        margin-left: 3vw;
+    }
+
+    .projects_section .text2 {
+        font-size: 0.9rem;
+        margin-top: 10vh;
+    }
+
+    .projects_section .block2 {
+        height: 15vh;
+        margin-top: 15vh;
+        margin-bottom: 8vh;
+    }
+
+    .projects_section .parain {
+        font-size: 1rem;
+    }
+
+    .projects_section .para h1 {
+        font-size: 1.2rem;
+    }
+    .projects_section .Sbox{
+        top: 83vh;
+        font-size: 0.8rem;
+    }
+    .projects_section .Sbox .para h1{
+        font-size: 1.1rem;
+    }
+    .projects_section .Sbox .parain {
+        font-size: 0.8rem;
+    }
+
+    .projects_section .responsive-image {
+        width: 55vw;
+        height: 35vh;
+    }
+
+    .projects_section .responsive-image2 {
+        width: 40vw;
+        height: 55vh;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .projects_section {
+        margin-bottom: 1vh; 
+    }
+    .projects_section
+    .block1 {
+        height: 30vh;
+        margin-bottom: 1vh;
+    }
+
+    .projects_section
+    .text1 {
+        font-size: 2rem;
+        width: 80vw;
+        margin-top: 10vh;
+        margin-left: 2vw;
+    }
+
+    .projects_section
+    .text2 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 5vh;
+        margin-left: 0;
+    }
+
+    .projects_section
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects_section
+    .line {
+        width: 90vw;
+        height: 0.1vh;
+        margin-left: 3vw;
+        margin-top: 1vh;
+    }
+
+    .projects_section
+    .block2 {
+        height: auto; 
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        z-index: 1;
+    }
+
+    .projects_section
+    .parain {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.8rem;
+    }
+
+    .projects_section
+    .parain ul {
+        flex-direction: row;
+        list-style: disc;
+        margin-left: 2vw;
+        gap: 5vw;
+    }
+
+    .projects_section
+    .parain ul li {
+        margin-bottom: 2vh;
+    }
+
+.projects_section
+.para h1 {
+        font-size: 1.5rem;
+    }
+     
+
+    .projects_section
+    .Bbox {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        top: 0vh     ;
+        margin-bottom: 0vh;
+        margin-left: 0;
+        position: relative; 
+        z-index: 1;
+    }
+    .projects_section
+    .Sbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        margin-top: 0vh;
+        position: relative; 
+        z-index: 1;
+        top: 0vh;
+        margin-left: 0px;
+    }
+    .projects_section
+    .responsive-image {
+        width: 85vw; 
+        height: auto;
+    }
+    .projects_section
+    .responsive-image2{
+        width: 85vw;
+        height: auto;
+    }
+    
+}
+@media (max-width:480px){
+    .projects_section .block1{
+        height: 32vh;
+    }
+    .projects_section.text1{
+        font-size: 1rem;
+    }
+}
+@media (max-width:320px){
+    .projects_section .block1{
+        height: 35vh;
+    }
+    .projects_section.text1{
+        font-size: 1rem;
+    }
+}
+
 

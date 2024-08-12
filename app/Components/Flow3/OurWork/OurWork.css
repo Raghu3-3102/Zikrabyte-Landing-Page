@@ -81,6 +81,7 @@
 
     .ourWork_section .heading_cnt h2 {
         font-size: 2.5rem;
+        text-align: center;
     }
 
     .ourWork_section .outerImgCnt {
@@ -93,8 +94,10 @@
     }
 
     .ourWork_section .img_cnt {
-        width: 120vw;
+        width: 100vw;
         max-width: 160vw;
+        height: auto;
+        object-fit:fill;
     }
 }
 
