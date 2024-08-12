@@ -47,7 +47,8 @@ nav{
 }
 
 .nav_container .logo_container{
-    padding: 1rem;
+    padding: 2rem;
+    transform: translateX(-5%);
 }
 
 .menuItem_container ul{
@@ -104,7 +105,7 @@ nav{
     align-items: center;
     cursor: pointer;
     gap: 10px;
-    ;
+    
 }
 
 .nav_container .menu-btn-icon {
@@ -124,7 +125,7 @@ nav{
 .menu-text{
     margin-right: 10px;
     transition: all 0.5s ease-in-out;   
-    font-size: 2rem;
+    font-size: 1.65rem;
     color: #fff;
  
 }
@@ -193,10 +194,34 @@ nav{
     text-decoration: none;
 }
 
+@media screen and (max-width:768px) {
+    .nav_container .logo_container{
+        padding: 1.5rem;   
+    }
+}
+
+
+@media screen and (min-width:500px) {
+    .menu-button-box{
+        padding: 2rem 1rem;
+    }
+
+    
+}
+
 @media screen and (max-width:500px) {
     .menuItem_container ul {
         width: 100%;
         
+    }
+    .nav_container .logo_container{
+        padding: 1rem;
+    }
+    .nav-button .menu-button-box{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-radius: 10px;
     }
     .nav_container .menu-text{
         font-size: 1rem;

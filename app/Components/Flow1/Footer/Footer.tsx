@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="bg-zik-orange text-white w-full py-5">
       
         <div className="flex-1 mb-5 md:mb-0">
-          <h3 className="text-white text-4xl text-center md:text-left md:text-5xl lg:text-7xl font-extrabold ml-0 mb-5 md:ml-10 lg:ml-20 mt-10">
+          <h3 className="text-white text-4xl text-center md:text-left md:text-5xl lg:text-7xl font-extrabold ml-0 mb-5 md:ml-10 mt-10">
             Zikrabyte
           </h3>
           <hr className="bg-black h-1 border-0 mx-10 md:mx-10" />
@@ -65,8 +65,8 @@ export const Footer = () => {
             </div>
         </div>
 
-      <div className="text-black text-2xl font-bold ml-5 md:ml-10 mt-5 lg:ml-20">
-        <p>Contact: project@zikrabyte.com</p>
+      <div className="text-black text-xl md:text-2xl font-bold ml-7 md:ml-10 mt-5">
+        <p className="ml-1">Contact: project@zikrabyte.com</p>
       </div>
       <hr className="bg-black h-1 border-0 mt-5 mx-5 md:mx-10" />
     </footer>

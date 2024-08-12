@@ -69,7 +69,7 @@ export const Offer2 = () => {
 
 
     {/* Services Container Starts */}
-    <div className="service_cnt w-3/5 max-h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide"
+    <div className="service_cnt w-3/5 max-h-screen overflow-y-scroll sm:my-4 overflow-x-hidden scrollbar-hide"
           data-aos="zoom-in-up">
 
     {/* <div className="service-card p-7 border border-solid border-black">

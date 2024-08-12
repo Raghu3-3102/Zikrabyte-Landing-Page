@@ -87,7 +87,7 @@
     .twoimages{
       display: flex;
       flex-direction: row;
-      gap: 5vw;
+      gap: 3vw;
       align-items: center;
       margin-left: 30px;
       margin-bottom: 7vh;
@@ -133,6 +133,7 @@
     }
     .twoimages img{
       width: 45vw;
+      border-radius: 20px;
     }
   
     
@@ -157,8 +158,7 @@
     }
   }
   
-  
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (min-width: 551px) {
     .title {
       font-size: 2.5rem;
       text-align: center; 
@@ -168,6 +168,8 @@
     }
     .crmManagement {
       gap: 5vw;
+      margin-top: 1vh;
+      margin-left: 5vw; /* Adjusted margin */
     }
     .crmManagement h3 {
       font-size: 1.5rem;
@@ -181,14 +183,29 @@
       gap: 5vw;
     }
     .buttons {
-      flex-direction: column;
-      align-items: center; 
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox {
+      width: 80vw;
+      margin: 0 auto;
     }
     .projects {
-      width: 30vw;
+      width: 100%; /* Changed to 100% */
+      text-align: center; /* Center align text */
+      margin: 0 auto; /* Centering */
+    }
+    .twoimages {
+      display: flex; /* Use flex for two images */
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center images */
+      gap: 10px; /* Add space between images */
     }
     .twoimages img {
-      width: 90vw; 
+      width: 90%; /* Adjust image width */
+      max-width: 300px; /* Set a max width */
+      margin: 0 auto; /* Center images */
     }
     .bignum h1 {
       font-size: 30px;
@@ -201,30 +218,100 @@
     }
     .projects h1 {
       font-size: 30px;
+      margin: 10px 0; /* Add spacing */
     }
   }
-  
-  
-  @media (max-width: 480px) {
+  @media (max-width: 768px) and (min-width: 551px) {
     .title {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      text-align: center; 
+    }
+    .images {
+      width: 90vw;
+    }
+    .crmManagement {
+      gap: 5vw;
+      margin-top: 1vh;
+      margin-left: 5vw; /* Adjusted margin */
+    }
+    .crmManagement h3 {
+      font-size: 1.5rem;
+    }
+    .details {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .text {
+      width: 100%;
+      gap: 5vw;
+    }
+    .buttons {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .textbox {
+      width: 80vw;
+      margin: 0 auto;
+    }
+    .projects {
+      width: 100%; /* Changed to 100% */
+      text-align: center; /* Center align text */
+      margin: 0 auto; /* Centering */
+    }
+    .twoimages {
+      display: flex; /* Use flex for two images */
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center images */
+      gap: 10px; /* Add space between images */
+    }
+    .twoimages img {
+      width: 90%; /* Adjust image width */
+      max-width: 300px; /* Set a max width */
+      margin: 0 auto; /* Center images */
+    }
+    .bignum h1 {
+      font-size: 30px;
+    }
+    .bignum p {
+      font-size: 14px;
+    }
+    .project h3 {
+      font-size: 25px;
+    }
+    .projects h1 {
+      font-size: 30px;
+      margin: 10px 0; /* Add spacing */
+    }
+  }
+    
+  
+  @media (max-width: 550px) {
+    .title {
+      font-size: 1.8rem;
       text-align: center; 
     }
     .images {
       width: 85vw;
+      margin: 0 auto;
     }
     .crmManagement {
       gap: 3vw;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
     }
     .crmManagement h3 {
       font-size: 1.2rem;
     }
-    .crmbox{
+    .crmbox {
       padding-left: 0;
-      margin-right: 20vw;
+      margin-right: 10vw;
+      margin-left: 10vw;
     }
     .details {
-      gap: 5px;
+      gap: 10px;
+      flex-direction: column;
     }
     .details h4 {
       font-size: 1rem;
@@ -232,8 +319,9 @@
     .detail p {
       font-size: 0.9em;
     }
-    .buttons{
+    .buttons {
       flex-direction: row;
+      justify-content: flex-start;
     }
     .buttons p {
       font-size: 10px;
@@ -241,10 +329,11 @@
       margin: 2px;
     }
     .textbox {
-      margin-top: 1vh;
-      margin-bottom: 2vh;
       flex-direction: column;
-      margin-left: 3vh;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 10vw;
+      margin-right: 10vw;
     }
     .bignum h1 {
       font-size: 25px;
@@ -257,15 +346,41 @@
       font-size: 20px;
     }
     .projects {
-      width: 40vw;
-      margin:10px;
+      width: 85vw;
+      margin: 10px 5px;
+      height: auto;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
+    
     .projects h1 {
       font-size: 25px;
-      margin:10px;
+      margin: 10px;
+    }
+    .twoimages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; 
     }
     .twoimages img {
-      width: 80%; 
-      margin-left: 2vh;
+      width: 85%; 
+      margin: 0 auto 2vh 5vw;
+    }
+    .projects p{
+      margin-top: 5px;
     }
   }
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+
+  
