@@ -4,7 +4,7 @@ function Service_line() {
   return (
     <div>
       <div className={Styles.line_cnt}>
-       <div className={Styles.circule}></div> <div className={Styles.line}>.</div>
+       <div className={Styles.circule}></div> <div className={Styles.line}> . .</div>
       </div>
     </div>
   )

@@ -13,6 +13,7 @@ function Service_3_() {
     "Notion",
     "Principle Prototypes",
     "Sketch",
+  
     "Slack",
     "Webflow"
 ];
@@ -23,7 +24,7 @@ function Service_3_() {
     <div className={stylese.service_2_cnt}>
          
     <div className={stylese.left_cnt}>
-<p className={stylese.text}>Specilized in our work.</p>
+<p className={stylese.text}>Tools we use.</p>
 <div className={stylese.imageContainer}>
   <Image
     src={img1}
@@ -35,9 +36,10 @@ function Service_3_() {
 </div>
 </div>
          <div className={stylese.right_cnt}>
+         <div className={stylese.lineup}><p>TOOLS</p> <div className={stylese.linesd}></div> </div>
           {content.map((cnt,ind)=>(
 
-          <div key={ind} className={stylese.show_service}>{cnt}   <div className={stylese.arrow}>&#x2192;</div></div>
+          <div key={ind} className={stylese.show_service}><h3>{cnt}</h3>   <div className={stylese.arrow}>&#x2192;</div></div>
 
           ))}
           

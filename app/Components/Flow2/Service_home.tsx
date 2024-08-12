@@ -9,8 +9,7 @@ import gif3 from './Image/03.gif'
 import gif4 from './Image/04.gif'
 import gif5 from './Image/05.gif'
 import gif6 from './Image/06.gif'
-import ServiceBanner from './Image/ServiceBanner.gif'
-import { Navbar } from '../Flow1/Navbar/Navbar';
+
 
 function Service_home() {
 
@@ -98,7 +97,7 @@ function Service_home() {
         <div className={styles.left_cnt}>
           
         {currentImageIndex === 5 ? <>
-          <div className={styles.write_up_2}>WE GOT YOU !</div>
+          <div className={styles.write_up_2}>WE GOT YOU!</div>
          </> : 
          <> <div className={styles.write_up}>We Are</div>
          <div className={styles.write_up}>Specilized in</div></>}
@@ -132,11 +131,6 @@ function Service_home() {
     
 
       </div>
-
-        <div className="flex">
-
-      <Image src={ServiceBanner} alt="Picture of the author" />
-        </div>
     </div>
   )
 }
