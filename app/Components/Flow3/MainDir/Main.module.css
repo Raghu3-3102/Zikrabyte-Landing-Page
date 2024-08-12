@@ -27,7 +27,21 @@
     justify-content: center;
     font-size: 4em;
     font-weight: 600;
+    position: relative;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
   }
+
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
   .bigbox{
     height: 30vh;
     border: 0.25px solid #939393;
