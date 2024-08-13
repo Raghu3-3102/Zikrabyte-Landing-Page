@@ -102,7 +102,11 @@
     align-items: center;
     gap: 10px;
     row-gap: 25px;
+    column-gap: 25px;
     margin-top: 2vh;    
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
 
