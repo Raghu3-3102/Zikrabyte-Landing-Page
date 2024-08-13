@@ -163,64 +163,67 @@
     height: 45vh;
     max-width: 100%;
 }
-.projects_section
-.moving-text-container {
+.projects_section .moving-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     color: white;
-    font-size: 1.5vw;
-    font-weight: 600;
+    font-size: 1.3vw; 
+    font-weight: 700;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px; 
+    overflow: hidden;
+    width: 97%;
 }
 
-.projects_section
-.moving-text {
+.projects_section .moving-text {
     white-space: nowrap;
     position: relative;
     opacity: 0;
+    overflow: hidden;
 }
 
-.projects_section
-.moving-text.left {
-    animation: moveTextLeft 0.7s ease-in-out forwards;
+.projects_section .moving-text.left {
+    animation: moveTextLeft 1.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; 
 }
 
-.projects_section
-.moving-text.right {
-    animation: moveTextRight 0.7s ease-in-out forwards;
+.projects_section .moving-text.right {
+    animation: moveTextRight 1.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 }
 
 @keyframes moveTextLeft {
     0% {
-        transform: translateX(-20%);
+        transform: translateX(-50%);
         opacity: 0;
     }
-    50% {
-        transform: translateX(0);
-        opacity: 0.8;
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
     }
     100% {
-        transform: translateX(20%);
+        transform: translateX(50%);
         opacity: 0;
     }
 }
 
 @keyframes moveTextRight {
     0% {
-        transform: translateX(20%);
+        transform: translateX(50%);
         opacity: 0;
     }
-    50% {
-        transform: translateX(0%);
-        opacity: 0.8;
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
     }
     100% {
-        transform: translate(-20%);
+        transform: translateX(-50%);
         opacity: 0;
     }
 }
@@ -241,6 +244,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
+    width: 97%;
 }
 
 .projects_section
@@ -248,16 +253,17 @@
     white-space: nowrap;
     position: relative;
     opacity: 0; 
+    overflow: hidden;
 }
 
 .projects_section
 .moving-text2.left {
-    animation: movesTextLeft 0.8s ease-in-out forwards;
+    animation: moveTextLeft 1.5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 }
 
 .projects_section
 .moving-text2.right {
-    animation: movesTextRight 0.8s ease-in-out forwards;
+    animation: moveTextRight 1.5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 }
 
 @media (max-width:1024px){
@@ -428,7 +434,10 @@
 }
 @media (max-width:480px){
     .projects_section .block1{
-        height: 32vh;
+        height: 40vh;
+    }
+    .projects_section .text2{
+        font-size: 0.7rem;
     }
     .projects_section.text1{
         font-size: 1rem;
