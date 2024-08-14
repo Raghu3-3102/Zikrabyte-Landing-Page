@@ -27,20 +27,39 @@
     justify-content: center;
     font-size: 4em;
     font-weight: 600;
-    position: relative;
+    overflow: hidden;
+    height: auto;
     transition: opacity 0.5s ease, transform 0.5s ease; 
   }
 
-
 .fadeIn {
-  opacity: 1;
-  transform: translateY(0);
+  animation: slideInFromBelow 0.5s forwards;
 }
 
 .fadeOut {
-  opacity: 0;
-  transform: translateY(-20px);
+  animation: slideOutToBelow 0.5s forwards;
 }
+@keyframes slideInFromBelow {
+  0% {
+      opacity: 0;
+      transform: translateY(40px); 
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes slideOutToBelow {
+  0% {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-40px); 
+  }
+}
+
 
   .bigbox{
     height: 30vh;
