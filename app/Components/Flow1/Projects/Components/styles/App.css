@@ -187,11 +187,11 @@
 }
 
 .projects_section .moving-text.left {
-    animation: moveTextLeft 1.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; 
+    animation: moveTextLeft 1.5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards; 
 }
 
 .projects_section .moving-text.right {
-    animation: moveTextRight 1.4s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+    animation: moveTextRight 1.5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
 }
 
 @keyframes moveTextLeft {
