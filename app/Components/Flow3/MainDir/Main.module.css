@@ -27,7 +27,40 @@
     justify-content: center;
     font-size: 4em;
     font-weight: 600;
+    overflow: hidden;
+    height: auto;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
   }
+
+.fadeIn {
+  animation: slideInFromBelow 0.5s forwards;
+}
+
+.fadeOut {
+  animation: slideOutToBelow 0.5s forwards;
+}
+@keyframes slideInFromBelow {
+  0% {
+      opacity: 0;
+      transform: translateY(40px); 
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes slideOutToBelow {
+  0% {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-40px); 
+  }
+}
+
+
   .bigbox{
     height: 30vh;
     border: 0.25px solid #939393;
