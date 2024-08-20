@@ -18,7 +18,7 @@
     animation : offerText 1s ease;
     border-radius: 30px;
     margin-top: 7%;
-
+    /* animation: boxAnimation 3s infinite ; */
 }
 
 @keyframes offerText {
@@ -34,7 +34,8 @@
 @media screen and (max-width:1500px) {
     .offer1_section .offer1_img_cnt{
         min-height: 30vh;
-        overflow: hidden;
+        /* overflow: hidden; */
+        overflow: unset;
     }
     .offer1_img_cnt img{
         width: 100%;
@@ -46,8 +47,6 @@
 @media screen and (max-width:1280px) {
     .offer1_section .offer1_img_cnt{
         min-height: 30vh;
-
-        overflow: hidden;
     }
     .offer1_img_cnt img{
         width: 100%;
@@ -73,3 +72,54 @@
 }
 
 
+
+/* ------------------- */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 3rem;
+  }
+  .box{
+    width:200px;
+    height:120px;
+   background-color: rgb(236, 129, 129); 
+    border-radius:1rem;
+    /* animation: boxAnimation 2s ease 1s infinite; */
+    transition: 1s all;
+  /*   transform: translate(0px,-100px) scale(2); */
+  }
+  
+  @keyframes boxAnimation {
+    0%{
+      transform: translate(0px,600px) scale(0.5);
+  }
+    50%{
+      transform: translate(0px,-150px) scale(1);
+    }
+    60%{
+      transform: translate(0px,-150px) scale(1);
+    }
+    70%{
+       transform: translate(0px,-50px) scale(0.7);
+  }
+    100%{
+      transform: translate(0px,0px) scale(1);
+    }
+  }
+  /* Initial state for the AOS element */
+[data-aos="box-animation"] {
+    opacity: 0; /* Start invisible */
+    /* animation: boxAnimation 2s infinite; Apply the animation */
+  }
+  
+  /* State when the animation is triggered */
+  [data-aos="box-animation"].aos-animate {
+    opacity: 1; /* Fade in when animated */
+    animation: boxAnimation 2s ease; /* Apply the animation */
+  }
+  
+  .offer1_img_cnt{
+    overflow: unset;
+  }

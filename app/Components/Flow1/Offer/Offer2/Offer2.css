@@ -28,6 +28,7 @@
     border-left: none;
     transition: all 1s ease;
     animation: fadeup 1s ease;
+    transform: translate(0, 100px);
 }
 
 @keyframes fadeup {

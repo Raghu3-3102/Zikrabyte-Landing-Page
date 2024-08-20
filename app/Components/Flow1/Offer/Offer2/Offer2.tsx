@@ -1,7 +1,11 @@
 'use client';
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import AOS from "aos";
 import './Offer2.css'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 export const Offer2 = () => {
@@ -11,9 +15,30 @@ export const Offer2 = () => {
 
     });
     AOS.refresh();
+
+    
     
   }, []);
 
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    // GSAP animation
+    gsap.from(boxRef.current, {
+      scrollTrigger: {
+        trigger: boxRef.current,
+        start: "top bottom",
+        end: "top center",
+        toggleActions: "play none none none",
+        // markers: true,
+      },
+      y: 100,
+      // rotation: 360,
+      duration: 2,
+      
+    });
+  }, []);
+  
   const data = [{
     'title': 'Strategy',
     'description': `All our websites start with defining your <span style="color:var(--saffron-color)">business and presenting</span> a strategy to increase traffic and/or sales. Extensive research into your industry and competition will highlight the most lucrative ways of bringing the right customers to your site, this is used to direct every aspect of design and the way you present your business. It’s fundamental to every project we work on.`
@@ -82,11 +107,13 @@ export const Offer2 = () => {
     </div> */}
 
     {data.map((_, index) => (
-        <div key={index} className="service-card p-7 border border-solid border-black"> 
+        <div key={index}
+          
+         className="service-card p-7 border border-solid border-black"> 
         <h3 className="service_title text-3xl font-semibold ">
         {_.title}
         </h3>
-        <p className="service_description" dangerouslySetInnerHTML={{ __html: _.description }}>
+        <p ref={boxRef} className="service_description" dangerouslySetInnerHTML={{ __html: _.description }}>
         
         </p>
       </div>  

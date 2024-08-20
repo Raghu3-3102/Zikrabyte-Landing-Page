@@ -5,6 +5,8 @@ import AOS from "aos";
 import { Card } from "./Card/Card";
 import Image from "next/image";
 import serviceBg from "../../../../public/assets/img/ServiceBg.png";
+import serviceBgUpper from "../../../../public/assets/img/ServiceBgUppe.png";
+import serviceBgLower from "../../../../public/assets/img/ServiceBg.png";
 
 export const Service = () => {
 
@@ -108,13 +110,15 @@ export const Service = () => {
 
   return (
     <div className="service_section pb-8" data-aos="fade-up">
+      
       <Image className="bg_img upper" src={serviceBg} alt=""/>
-      <Image className="bg_img lower" src={serviceBg} alt=""/>
+      {/* <Image className="bg_img upper" src={serviceBg} alt=""/>
+      <Image className="bg_img lower" src={serviceBg} alt=""/> */}
 
-      <div className="heading_cnt text-center mt-32" >
+      <div className="heading_cnt text-center pt-32" >
         <div className="heading_text_cnt" >
           <h2 className="text-white text-5xl font-medium" data-aos="fade-up">Our Service</h2>
-          <p className="text-white text-xl mt-5 " data-aos="fade-up">
+          <p className="text-white text-xl mt-5" data-aos="fade-up">
             Data guides us. With the perfect balance of performance,
             <br />
             creativity and tech, we&apos;re here to fuel your growth journey.
