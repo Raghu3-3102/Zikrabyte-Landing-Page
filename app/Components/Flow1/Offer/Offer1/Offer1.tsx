@@ -20,17 +20,17 @@ export const Offer1 = () => {
   
   return (
     <div className='offer1_section p-10 relative'  
-         data-aos="fade-up"
-         data-aos-duration="500"
-         data-aos-easing="ease-in-out"
-         data-aos-offset="200"
+        //  data-aos="fade-up"
+        //  data-aos-duration="500"
+        //  data-aos-easing="ease-in-out"
+        //  data-aos-offset="200"
          >
         <div className="offer1_text"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-offset="250"
-              data-aos-delay="100"
+              data-aos-delay="1800"
               >
             <h2 className='text-4xl font-semibold '>What We Offer</h2>
             <p className='md:w-1/2 text-xl mt-5 ' >
@@ -41,14 +41,15 @@ export const Offer1 = () => {
             </p>
         </div>
         <div className="offer1_img_cnt mt-10"
-              data-aos="zoom-out-up"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-offset="200"
-              data-aos-delay="100"
+              // data-aos="zoom-out-up"
+              // data-aos-duration="1000"
+              // data-aos-easing="ease-in-out"
+              // data-aos-offset="200"
+              // data-aos-delay="100"
               // data-aos-anchor-placement="top-center"
+            
         >
-            <Image src={offer1} alt="Offer1"/>
+            <Image   data-aos="box-animation" src={offer1} alt="Offer1"/>
         </div>
     </div>
   )
