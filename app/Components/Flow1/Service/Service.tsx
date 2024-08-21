@@ -111,7 +111,7 @@ export const Service = () => {
   return (
     <div className="service_section pb-8" data-aos="fade-up">
       
-      <Image className="bg_img upper" src={serviceBg} alt=""/>
+      {/* <Image className="bg_img upper" src={serviceBg} alt=""/> */}
       {/* <Image className="bg_img upper" src={serviceBg} alt=""/>
       <Image className="bg_img lower" src={serviceBg} alt=""/> */}
 
@@ -130,14 +130,14 @@ export const Service = () => {
       </div>
 
       {isTabletScreen ? 
-      <div className="cards_cnt">
+      <div className="cards_cnt pb-24">
         {cards.map((_,index)=> (
           <Card card={_} gradient={getRandomGradient()} key={index} />
         ))}
       </div>
 :
       //Desktop cards code
-      <div className="cards_cnt mx-6">
+      <div className="cards_cnt m-6 mb-16 lg:mb-24">
       <div className="card_cnt_col col1">
         <Card card={cards[0]}  gradient={getRandomGradient()} /> 
         <Card card={cards[3]}  gradient={getRandomGradient()}/> 

@@ -1,235 +1,253 @@
-.service_section{
-    min-height: 100vh;
-    width: 100%;
-    height: fit-content;
-    background-color: #000;
-    z-index: -9;
+.service_section {
+  min-height: 100vh;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+  z-index: -9;
+  background-image: url(../../../../public/assets/img/ServiceBgUpper.png),
+    url(../../../../public/assets/img/ServiceBgLower.png);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
 }
 
 .service_section .bg_img {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
-.heading_cnt .btn_cnt{
-    width: 250px;
-    position: absolute;
-    right: 5%;
-    transform: translateY(-150%);
+.heading_cnt .btn_cnt {
+  width: 250px;
+  position: absolute;
+  right: 5%;
+  transform: translateY(-150%);
 }
-.service_section .heading_cnt{
-    position: relative;
-}
-
-.heading_cnt .btn{
-    background-color: #ff7542;
-    color: white;
-    border: none;
-    border-radius: 0;
-    font-size: 20px;
-    margin-top: 20px;
-    border-radius: 50px;
-    cursor: pointer;
+.service_section .heading_cnt {
+  position: relative;
 }
 
-.heading_cnt .btn:hover{
-    background-color: #ff6a00;
+.heading_cnt .btn {
+  background-color: #ff7542;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.cards_cnt .card{
-    width: 450px;
-    height: 450px;
-    border-radius: 10px;
-    border: 1px solid #ff7542;
-    background-color: #000000bd;
-    position: relative;
-    overflow: hidden;
-    max-width: 30vw;
+.heading_cnt .btn:hover {
+  background-color: #ff6a00;
 }
 
-.card .card_img_cnt{
-    z-index: 0;
+.cards_cnt .card {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  border: 1px solid #ff7542;
+  background-color: #000000bd;
+  position: relative;
+  overflow: hidden;
+  max-width: 30vw;
 }
 
-
-.cards_cnt .card .card_img_cnt .card_img{
-    width: 150px;
-    border-radius: 10px 10px 0 0;
-    /* z-index: 3; */
+.card .card_img_cnt {
+  z-index: 0;
 }
 
+.cards_cnt .card .card_img_cnt .card_img {
+  width: 150px;
+  border-radius: 10px 10px 0 0;
+  /* z-index: 3; */
+}
 
-.cards_cnt .card .particle_img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background-color: #000000bd ; */
-    top: 0;
-    left: 0;
-    z-index: -3;
+.cards_cnt .card .particle_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #000000bd ; */
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
 
 .heading_text_cnt {
-    margin: 0;
-    height: 100%; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
+  margin: 0;
+  height: 100%; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
 }
 
-.card .card_text_cnt{
-    z-index: 3;
+.card .card_text_cnt {
+  z-index: 3;
 }
 
 .gradient-box {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    
-    background: radial-gradient(rgba(130, 20, 255, 0.8), transparent, transparent);
-    position: absolute;
-    left: -160px;
-    top: -160px;
-    z-index: -2;
-    /* animation: gradientColorChange 10s ease infinite;    */
-    animation: color 10s infinite;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  background: radial-gradient(
+    rgba(130, 20, 255, 0.8),
+    transparent,
+    transparent
+  );
+  position: absolute;
+  left: -160px;
+  top: -160px;
+  z-index: -2;
+  /* animation: gradientColorChange 10s ease infinite;    */
+  animation: color 10s infinite;
 }
 
 @keyframes color {
-    100%{
-        filter: hue-rotate(360deg);
-    }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 @keyframes gradientColorChange {
-    0% {
-        background: radial-gradient(rgba(255, 0, 149, 0.863), transparent, transparent);
-        opacity: 1;
-    }
-    25% {
-        background: radial-gradient(rgba(130, 20, 255, 0.8), transparent, transparent);
-    }
-    50% {
-        background: radial-gradient(rgba(229, 255, 0, 0.863), transparent, transparent);
-        opacity: 0;
-    }
-    75% {
-        background: radial-gradient(rgba(20, 255, 196, 0.8), transparent, transparent);
-    }
-    100% {
-        background: radial-gradient(rgba(255, 115, 0, 0.863), transparent, transparent);
-        opacity: 1;
-    }
+  0% {
+    background: radial-gradient(
+      rgba(255, 0, 149, 0.863),
+      transparent,
+      transparent
+    );
+    opacity: 1;
+  }
+  25% {
+    background: radial-gradient(
+      rgba(130, 20, 255, 0.8),
+      transparent,
+      transparent
+    );
+  }
+  50% {
+    background: radial-gradient(
+      rgba(229, 255, 0, 0.863),
+      transparent,
+      transparent
+    );
+    opacity: 0;
+  }
+  75% {
+    background: radial-gradient(
+      rgba(20, 255, 196, 0.8),
+      transparent,
+      transparent
+    );
+  }
+  100% {
+    background: radial-gradient(
+      rgba(255, 115, 0, 0.863),
+      transparent,
+      transparent
+    );
+    opacity: 1;
+  }
 }
 
-
-.cards_cnt{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    height: fit-content;
-    gap: 0.25rem;
-    /* margin-bottom: 38.2%; */
+.cards_cnt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 0.25rem;
+  /* margin-bottom: 38.2%; */
 }
 
-.cards_cnt .card_cnt_col{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-align-items: space-around;
-justify-content: space-around;
-height: 100%;
-width: 30%;
-row-gap:1rem ;
-align-items: center;
+.cards_cnt .card_cnt_col {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+  height: 100%;
+  width: 30%;
+  row-gap: 1rem;
+  align-items: center;
 }
 
-.cards_cnt .col2{
-    height: 150vh;
-    justify-content: space-between;
-    margin-top: 0;
+.cards_cnt .col2 {
+  height: 150vh;
+  justify-content: space-between;
+  margin-top: 0;
 }
 
-
-
-
-.cards_cnt .card_cnt_col .col1{
-    padding-top: 200px;
+.cards_cnt .card_cnt_col .col1 {
+  padding-top: 200px;
 }
-.cards_cnt .col1, .col3{
-    /* padding-top: 100px; */
+.cards_cnt .col1,
+.col3 {
+  /* padding-top: 100px; */
 }
 
-
-.lower{
-    position: absolute;
-    bottom: 0;
+.lower {
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1280px) {
+  .service_section .heading_cnt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .service_section .card {
+    max-width: 30vw;
+  }
 
-        .service_section .heading_cnt{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-    .service_section .card{
-       max-width: 30vw;
-    }
-
-
-    .service_section .gradient-box{
-        transform: scale(0.5);
-    }
+  .service_section .gradient-box {
+    transform: scale(0.5);
+  }
 }
 
-    
 @media screen and (max-width: 768px) {
-.service_section .btn_cnt{
+  .service_section .btn_cnt {
     position: relative;
     transform: none;
     right: 0;
-}
-.service_section .cards_cnt{
+  }
+  .service_section .cards_cnt {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 10px;
-   
-    /* height: 150vh; */
-}
 
-.cards_cnt .card{
+    /* height: 150vh; */
+  }
+
+  .cards_cnt .card {
     /* max-width: 30vw; */
     width: 40vw;
     max-width: 40vw;
-}
+  }
 
-.service_section .cards_cnt{
+  .service_section .cards_cnt {
     margin-top: 2rem;
-}
+  }
 }
 
 @media screen and (max-width: 640px) {
-    .cards_cnt .card{
-        width: 40vw;
-        max-width: 40vw;
-    }
+  .cards_cnt .card {
+    width: 40vw;
+    max-width: 40vw;
+  }
 }
 
 @media screen and (max-width: 468px) {
-    .cards_cnt .card{
-        width: 80vw;
-        max-width: 80vw;
-    }
+  .cards_cnt .card {
+    width: 80vw;
+    max-width: 80vw;
+  }
 }
