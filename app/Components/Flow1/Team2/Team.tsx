@@ -4,46 +4,15 @@ import React, { useState } from "react";
 import Circle from "./Circle";
 import Image from "next/image";
 
-interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  imgSrc: string;
-}
-
 export const Team2 = () => {
-  const [selectedTeamMember, setSelectedTeamMember] =
-    useState<TeamMember | null>(null);
+  const [selectedTeamMember, setSelectedTeamMember] = useState<{
+    name: string;
+    role: string;
+    imgSrc: string;
+  } | null>(null);
 
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Christopher",
-      role: "Designer",
-      imgSrc: "/assets/images/t1.jpg",
-    },
-    {
-      id: 2,
-      name: "Jazzmine",
-      role: "Developer",
-      imgSrc: "/assets/images/t2.jpg",
-    },
-    {
-      id: 3,
-      name: "Stephine",
-      role: "Tester",
-      imgSrc: "/assets/images/t3.jpg",
-    },
-    {
-      id: 4,
-      name: "William",
-      role: "Manager",
-      imgSrc: "/assets/images/t4.jpg",
-    },
-  ];
-
-  const handleImageClick = (member: TeamMember) => {
-    setSelectedTeamMember(member);
+  const handleImageClick = (name: string, role: string, imgSrc: string) => {
+    setSelectedTeamMember({ name, role, imgSrc });
   };
 
   const handleExitClick = () => {
@@ -75,13 +44,14 @@ export const Team2 = () => {
           <p className="text-2xl md:text-6xl lg:text-8xl font-extrabold text-black">
             {selectedTeamMember.name}
           </p>
-          <p className="text-white font-light text-xs md:text-xl lg:text-3xl text-justify md:font-medium lg:font-semibold md:leading-7 lg:leading-10  pt-5 md:pt-10 lg:pt-20">
+          <p className="text-white font-light text-xs md:text-xl lg:text-3xl text-justify md:font-medium lg:font-semibold md:leading-7 lg:leading-10 pt-5 md:pt-10 lg:pt-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel
             nulla eget massa facilisis venenatis. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit. Nullam vel nulla eget massa facilisis
             venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam vel nulla eget massa facilisis venenatis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam vel nulla eget massa facilisis venenatis.
+            Nullam vel nulla eget massa facilisis venenatis.Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Nullam vel nulla eget massa
+            facilisis venenatis.
           </p>
         </div>
       </div>
@@ -94,29 +64,101 @@ export const Team2 = () => {
         Our teams are led by bold creative vision and multi-disciplinary
         experience
       </div>
-      <div className="flex flex-row justify-center md:justify-between overflow-hidden gap-4 md:gap-8 mx-5 md:mx-10 my-6 md:my-12">
-        {teamMembers.map((member) => (
+
+      <div className="flex flex-col md:flex-row justify-center overflow-hidden gap-4 md:gap-8 mx-5 md:mx-10 my-6 md:my-12">
+        <div className="flex gap-8 justify-center">
           <div
-            key={member.id}
             className="relative flex flex-col items-center cursor-pointer image-container"
-            onClick={() => handleImageClick(member)}
+            onClick={() =>
+              handleImageClick(
+                "Christopher",
+                "Designer",
+                "/assets/images/t1.jpg"
+              )
+            }
           >
             <Image
-              src={member.imgSrc}
-              alt={`Image of ${member.name}`}
+              src="/assets/images/t1.jpg"
+              alt="Image of Christopher"
               width={320}
               height={440}
-              className="w-80 h-[120px] md:w-72 md:h-[250px] lg:w-96 lg:h-[440px]"
+              className="w-36 h-[150px] md:w-72 md:h-[250px] lg:w-96 lg:h-[440px]"
             />
-            <h2 className="text-xs md:text-2xl lg:text-5xl font-bold lg:font-extrabold pt-5">
-              {member.name}
+            <h2 className="text-sm md:text-2xl lg:text-5xl font-bold lg:font-extrabold pt-2 md:pt-5">
+              Christopher
             </h2>
-            <div className="absolute w-8 h-8 md:w-16 md:h-16 bg-orange-500 text-xs md:text-base text-black rounded-full flex justify-center items-center opacity-0 transform -translate-x-1/2 -translate-y-1/2 circle">
+            <div className="absolute w-10 h-10 md:w-16 md:h-16 bg-orange-500 text-xs md:text-base text-black rounded-full flex justify-center items-center opacity-0 transform -translate-x-1/2 -translate-y-1/2 circle">
               View
             </div>
           </div>
-        ))}
+
+          <div
+            className="relative flex flex-col items-center cursor-pointer image-container"
+            onClick={() =>
+              handleImageClick("Jazzmine", "Developer", "/assets/images/t2.jpg")
+            }
+          >
+            <Image
+              src="/assets/images/t2.jpg"
+              alt="Image of Jazzmine"
+              width={320}
+              height={440}
+              className="w-36 h-[150px] md:w-72 md:h-[250px] lg:w-96 lg:h-[440px]"
+            />
+            <h2 className="text-sm md:text-2xl lg:text-5xl font-bold lg:font-extrabold pt-2 md:pt-5">
+              Jazzmine
+            </h2>
+            <div className="absolute w-10 h-10 md:w-16 md:h-16 bg-orange-500 text-xs md:text-base text-black rounded-full flex justify-center items-center opacity-0 transform -translate-x-1/2 -translate-y-1/2 circle">
+              View
+            </div>
+          </div>
+        </div>
+
+        <div className="flex gap-8 justify-center">
+          <div
+            className="relative flex flex-col items-center cursor-pointer image-container"
+            onClick={() =>
+              handleImageClick("Stephine", "Tester", "/assets/images/t3.jpg")
+            }
+          >
+            <Image
+              src="/assets/images/t3.jpg"
+              alt="Image of Stephine"
+              width={320}
+              height={440}
+              className="w-36 h-[150px] md:w-72 md:h-[250px] lg:w-96 lg:h-[440px]"
+            />
+            <h2 className="text-xs md:text-2xl lg:text-5xl font-bold lg:font-extrabold pt-2 md:pt-5">
+              Stephine
+            </h2>
+            <div className="absolute w-10 h-10 md:w-16 md:h-16 bg-orange-500 text-xs md:text-base text-black rounded-full flex justify-center items-center opacity-0 transform -translate-x-1/2 -translate-y-1/2 circle">
+              View
+            </div>
+          </div>
+
+          <div
+            className="relative flex flex-col items-center cursor-pointer image-container"
+            onClick={() =>
+              handleImageClick("William", "Manager", "/assets/images/t4.jpg")
+            }
+          >
+            <Image
+              src="/assets/images/t4.jpg"
+              alt="Image of William"
+              width={320}
+              height={440}
+              className="w-36 h-[150px] md:w-72 md:h-[250px] lg:w-96 lg:h-[440px]"
+            />
+            <h2 className="text-xs md:text-2xl lg:text-5xl font-bold lg:font-extrabold pt-2 md:pt-5">
+              William
+            </h2>
+            <div className="absolute w-10 h-10 md:w-16 md:h-16 bg-orange-500 text-xs md:text-base text-black rounded-full flex justify-center items-center opacity-0 transform -translate-x-1/2 -translate-y-1/2 circle">
+              View
+            </div>
+          </div>
+        </div>
       </div>
+
       <Circle />
     </div>
   );
