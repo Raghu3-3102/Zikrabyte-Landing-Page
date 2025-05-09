@@ -10,21 +10,21 @@ interface Line {
     id: number;
 }
 
-function BImage1(){
+function BImage1() {
     const [lines, setLines] = useState<Line[]>([]);
-    const [lineCount, setLineCount] = useState(0); 
-    const mouseMovedRef = useRef(false); 
+    const [lineCount, setLineCount] = useState(0);
+    const mouseMovedRef = useRef(false);
 
     const handleMouseEnter = () => {
-        setLines([]); 
-        setLineCount(0); 
-        mouseMovedRef.current = false; 
+        setLines([]);
+        setLineCount(0);
+        mouseMovedRef.current = false;
     };
 
     const handleMouseLeave = () => {
-        setLines([]); 
-        setLineCount(0); 
-        mouseMovedRef.current = false; 
+        setLines([]);
+        setLineCount(0);
+        mouseMovedRef.current = false;
     };
 
     const handleMouseMove = () => {
@@ -33,10 +33,10 @@ function BImage1(){
                 ...prevLines,
                 { direction: prevLines.length % 2 === 0 ? 'right' : 'left', id: Date.now() }
             ]);
-            setLineCount(prevCount => prevCount + 1); 
-            mouseMovedRef.current = true; 
+            setLineCount(prevCount => prevCount + 1);
+            mouseMovedRef.current = true;
         } else if (mouseMovedRef.current) {
-            mouseMovedRef.current = false; 
+            mouseMovedRef.current = false;
         }
     };
 
@@ -69,5 +69,7 @@ function BImage1(){
         </div>
     );
 }
+
+
 
 export default BImage1;

@@ -7,8 +7,8 @@ import right from "../../../../public/assets/client_img/next.png";
 export const Review = () => {
   return (
     <>
-      <div className="flex flex-wrap items-center mt-24 mb-0 mx-0 pr-4 md:pr-10">
-        <div className="w-full lg:w-6/12 pl-5 md:pl-7 p-7 pt-0 lg:pt-7 lg:pl-20">
+      <div className="flex flex-wrap w-full items-center mt-24 mb-0 mx-0 pr-0 md:pl-10 lg:pl-10 md:pr-10">
+        <div className="w-full lg:w-6/12 pl-5 md:pl-7 p-7 pt-0 lg:pt-7 lg:pl-10">
           <p className="text-xs md:text-base font-semibold uppercase">
             Clients Reviews
           </p>
@@ -94,10 +94,10 @@ export const Review = () => {
         </div>
       </div>
 
-      <div className=" flex-row pr-4 md:flex md:pr-10">
-        <div className="flex flex-row w-full pl-5 md:pl-7 lg:pl-20 pt-5 lg:w-6/12 border-2 border-b-0 md:border-2 lg:border-b-0 md:border-r-0 border-solid border-gray-300">
+      <div className=" flex-row pr-0 md:flex md:px-10">
+        <div className="flex flex-row w-full pl-5 md:pl-7 lg:pl-10 pt-5 lg:w-6/12 border-2 border-b-0 md:border-2 lg:border-b-0 md:border-r-0 border-solid border-gray-300">
           <div>
-            <div className="flex items-end pr-0 lg:pr-32">
+            <div className="flex items-end pr-0 lg:pr-20">
               <p className="text-4xl font-normal">5.0</p>
               <p className="text-base ml-2">of 5.0</p>
             </div>
@@ -110,7 +110,7 @@ export const Review = () => {
               <Image src={star} alt="star" height={20} width={20} />
             </div>
           </div>
-          <div className="w-1/2 lg:w-4/12 ">
+          <div className="w-1/2 lg:w-1/2 ">
             <p className="text-xs leading-5 md:text-sm md:leading-7 lg:text-base font-bold lg:leading-8 md:pb-5 lg:pb-16 pl-6 lg:pl-12">
               “I was impressed by the accuracy in everything. The guys are
               working fast and very organized.”
@@ -143,9 +143,9 @@ export const Review = () => {
         </div>
       </div>
 
-      <div className="flex- lg:flex pr-4 md:pr-10">
-        <div className=" flex flex-col md:flex-row lg:flex-col w-full md:w-full lg:w-5/12">
-          <div className="flex items-end w-1/2 lg:w-auto pl-5 pt-5 lg:pt-0 md:pl-7 pb-5 lg:pl-20 lg:pb-20">
+      <div className="flex- lg:flex pr-0 md:px-10">
+        <div className=" flex flex-col md:flex-row lg:flex-col w-full md:w-full lg:w-5/12 border-2">
+          <div className="flex items-end w-1/2 lg:w-auto pl-5 pt-5 lg:pt-0 md:pl-7 pb-5 lg:pl-10 lg:pb-20">
             <div className="pr-10 md:pr-10">
               <p className="text-base font-light text-gray-500 pt-3">
                 Quality{" "}
@@ -169,13 +169,13 @@ export const Review = () => {
             </p>
           </div>
           <div className=" lg:p-0 md:w-1/2 lg:w-auto md:pt-5 md:pb-0 lg:pt-0 lg:pb-0 md:text-right lg:text-left">
-            <p className="px-5 pl-5 pb-3 md:pl-0 lg:px-20 lg:pb-20 font-bold text-base">
+            <p className="px-5 pl-5 pb-3 md:pl-0 lg:pl-10 lg:px-20 lg:pb-20 font-bold text-base">
               “I have six years of experience working in software teams as a
               product manager and Oleksandr (CEO of UXIS) is one of the most
               impressive UX designers Ive worked with.”
             </p>
 
-            <p className="pl-5 pb-5 md:pr-5 lg:pr-0 md:pl-0 lg:px-20 lg:pb-0 text-base font-light text-gray-500">
+            <p className="pl-5 pb-5 md:pr-5 lg:pr-0 md:pl-0 lg:pl-10 lg:px-20 lg:pb-0 text-base font-light text-gray-500">
               Tulha Patel,
               <br /> Founder, Kwala, UK
             </p>
@@ -253,9 +253,9 @@ export const Review = () => {
         </div>
       </div>
 
-      <div className="pr-4 md:pr-10 pb-20">
+      <div className="pr-0 md:px-10 pb-20">
         <div className=" w-full border-2 pl-5 md:pl-0 border-solid border-t-0 border-gray-300">
-          <div className="flex flex-col lg:flex-row md:pr-36 md:pl-7 lg:pl-20 pt-10">
+          <div className="flex flex-col lg:flex-row md:pr-36 md:pl-7 lg:pl-10 pt-10">
             <p className="font-medium md:font-bold text-sm w-auto lg:w-60 md:text-base ">
               “High-level of details in every phase. They really cared.”
             </p>
@@ -289,7 +289,7 @@ export const Review = () => {
               />
             </button>
           </div>
-          <div className=" flex p-10 gap-10 md:flex-row flex-col pl-0 pt-5 md:pl-7 md:pt-14 md:gap-20 lg:pl-20">
+          <div className=" flex p-10 gap-10 md:flex-row flex-col pl-0 pt-5 md:pl-7 md:pt-14 md:gap-20 lg:pl-10">
             <p className="text-sm md:text-lg font-base">
               Danny Trichter,
               <br />
